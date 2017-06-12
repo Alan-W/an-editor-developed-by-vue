@@ -1,0 +1,164 @@
+/* line 1, ../sass/filetree.scss */
+.edit-left {
+  position: absolute;
+  z-index: 2000;
+  height: 100%;
+}
+/* line 5, ../sass/filetree.scss */
+.edit-left .tree-wrapper {
+  width: 288px;
+  float: left;
+  z-index: 500;
+  overflow: hidden;
+  background-color: #ececec;
+  transition: height .2s ease;
+  position: relative;
+  height: 100%;
+  border-right: 1px solid #d0d0d0;
+}
+/* line 15, ../sass/filetree.scss */
+.edit-left .tree-wrapper .scene-header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  padding: 0 15px 5px 15px;
+  border-bottom: 1px solid #d0d0d0;
+}
+/* line 22, ../sass/filetree.scss */
+.edit-left .tree-wrapper .scene-header .title {
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  position: relative;
+}
+/* line 27, ../sass/filetree.scss */
+.edit-left .tree-wrapper .scene-header .title .switch-btn-wrapper {
+  position: absolute;
+  right: -5px;
+  top: 12px;
+}
+/* line 33, ../sass/filetree.scss */
+.edit-left .tree-wrapper .scene-header .search-box {
+  cursor: pointer;
+  height: 30px;
+  position: relative;
+}
+/* line 37, ../sass/filetree.scss */
+.edit-left .tree-wrapper .scene-header .search-box input {
+  width: 200px;
+  height: 24px;
+  border-radius: 24px;
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 5px 2px 25px;
+}
+/* line 45, ../sass/filetree.scss */
+.edit-left .tree-wrapper .scene-header .search-box .search-btn {
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 24px;
+  color: #fff;
+  background-color: #00B7EE;
+  text-align: center;
+  font-size: 12px;
+  position: absolute;
+  right: 45px;
+}
+/* line 58, ../sass/filetree.scss */
+.edit-left .tree-wrapper .scene-header .search-box img {
+  cursor: pointer;
+  vertical-align: middle;
+}
+/* line 62, ../sass/filetree.scss */
+.edit-left .tree-wrapper .scene-header .search-box .search {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  margin-top: -6px;
+}
+/* line 68, ../sass/filetree.scss */
+.edit-left .tree-wrapper .scene-header .search-box #addBaseScene {
+  position: absolute;
+  right: 0;
+}
+/* line 75, ../sass/filetree.scss */
+.edit-left .tree-wrapper .folder-box {
+  width: 270px;
+  overflow: auto;
+  margin: 10px auto;
+  padding-bottom: 50px;
+  height: 100%;
+  padding-bottom: 320px;
+  box-sizing: border-box;
+}
+/* line 84, ../sass/filetree.scss */
+.edit-left .tree-wrapper .folder-box .tree-list li {
+  position: relative;
+}
+/* line 86, ../sass/filetree.scss */
+.edit-left .tree-wrapper .folder-box .tree-list li a {
+  display: block;
+  position: relative;
+  padding: 2px 0;
+  color: #333;
+  text-decoration: none;
+  outline: 0 none;
+  cursor: pointer;
+  border-radius: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 10px 0;
+}
+/* line 99, ../sass/filetree.scss */
+.edit-left .tree-wrapper .folder-box .tree-list li a:hover {
+  background: #f8f3f3;
+  text-overflow: inherit;
+  overflow: visible;
+  color: #0c7fa9;
+}
+/* line 105, ../sass/filetree.scss */
+.edit-left .tree-wrapper .folder-box .tree-list li a .txt {
+  font-size: 12px;
+}
+/* line 107, ../sass/filetree.scss */
+.edit-left .tree-wrapper .folder-box .tree-list li a .txt:hover {
+  text-overflow: inherit;
+  overflow: visible;
+  color: #0c7fa9;
+}
+/* line 117, ../sass/filetree.scss */
+.edit-left .tree-wrapper .folder-box .tree-list .loc:hover .add-loc-ing {
+  display: block !important;
+}
+/* line 120, ../sass/filetree.scss */
+.edit-left .tree-wrapper .folder-box .tree-list .loc:hover .edit-ing {
+  display: block !important;
+}
+/* line 123, ../sass/filetree.scss */
+.edit-left .tree-wrapper .folder-box .tree-list .loc:hover .delte-loc-ing {
+  display: block !important;
+}
+/* line 131, ../sass/filetree.scss */
+.edit-left .tree-wrapper .folder-box .tree-list .event-item:hover .deletebtn {
+  display: block;
+}
+/* line 140, ../sass/filetree.scss */
+.edit-left .tree-wrapper .folder-box .tree-list .tree .first-layer .second-layer .second-layer-item.location .loc {
+  background: url("../../../../static/img/loc.png") no-repeat;
+}
+/* line 145, ../sass/filetree.scss */
+.edit-left .tree-wrapper .folder-box .tree-list .tree .first-layer .second-layer .area .range {
+  background: url("../../../../static/img/area.png") no-repeat;
+}
+/* line 149, ../sass/filetree.scss */
+.edit-left .tree-wrapper .folder-box .tree-list .tree .first-layer .second-layer .model {
+  background: url("../../../../static/img/mol.png") no-repeat;
+}
+/* line 152, ../sass/filetree.scss */
+.edit-left .tree-wrapper .folder-box .tree-list .tree .first-layer .second-layer .identify {
+  background: url("../../../../static/img/mol.png") no-repeat;
+}

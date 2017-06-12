@@ -1,0 +1,172 @@
+.panoWrapper,#panoContainer{
+	border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #EEEEEE;
+}
+#turnoffLabel,#scenicName{
+    position: fixed !important;
+    z-index: 999;
+}
+#turnoffLabel{
+    top: 87px !important;
+    left: 140px;
+}
+#scenicName{
+    left: 0;
+    top: 82px !important;
+    width: 135px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+    color: #00B7EE;
+    background: rgba(0,0,0,0.6);
+    border-radius: 6px;
+}
+.turnoffLabel-btn{
+    display: inline-block;
+    width: 38px;
+    height: 20px;
+    border-radius: 15px;
+    border: 1px solid #d0d0d0;
+    background-color: #FFF;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+}
+.turnoffLabel-close{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: rgb(204, 204, 204);
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+}
+
+#colorpanel{
+    z-index: 10;
+}
+.panoWrapper .nearbyWraper{
+    position: fixed !important;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -305px;
+    z-index: 999;
+    width: 640px;
+    padding: 10px 20px;
+    visibility: visible;
+    height: 100px;
+    background: rgba(37, 37, 37, 0.901961);
+}
+.swiper-button-next,.swiper-button-prev{
+    width: 25px !important;
+    height: 30px !important;
+    margin-top: -15px !important;
+}
+.swiper-button-next{
+    right: 0px !important;
+}
+.swiper-button-prev{
+    left: 0px !important;
+}
+.panoWrapper .back{
+    position: absolute;
+    top: 110px;
+    left: 3%;
+    z-index: 2;
+    margin: 5px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: solid 1px #eee;
+    background: #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.swiper-container {
+    width: 600px;
+    height: 100px;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.panoWrapper .pano_photo_item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    float: left;
+    line-height: 0;
+}
+.panoWrapper .pano_photo_item img {
+    width:100%;
+    height: 60px;
+    display: inline-block;
+    border: solid 1px #252525;
+}
+.panoWrapper .pano_photo_decs {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    font-size: 13px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+/* 全景文本外发光样式代码 */
+keyframes shineBlue {  
+    from { -webkit-box-shadow: 0 0 9px #333; }  
+    50% { -webkit-box-shadow: 0 0 18px yellow; }  
+    to { -webkit-box-shadow: 0 0 9px #333; }  
+}
+@-webkit-keyframes shineBlue {  
+    from { -webkit-box-shadow: 0 0 9px #333; }  
+    50% { -webkit-box-shadow: 0 0 18px yellow; }  
+    to { -webkit-box-shadow: 0 0 9px #333; }  
+}  
+@-moz-keyframes shineBlue{
+    from { -webkit-box-shadow: 0 0 9px #333; }  
+    50% { -webkit-box-shadow: 0 0 18px yellow; }  
+    to { -webkit-box-shadow: 0 0 9px #333; }   
+}
+.shine_border{  
+-webkit-animation-name: shineBlue;   
+-webkit-animation-duration: 3s;  
+-webkit-animation-iteration-count: infinite;   
+}
+/*箭头景点样式选中代码 */
+.scenicDiv .scenicUl li.arrowSelect{
+    background-color: #00B7EE;
+}

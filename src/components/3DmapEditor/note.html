@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>今日作业</title>
+</head>
+<body>
+    <!--
+        时刻关注自己的输出
+
+        1 如何在属性改变时 自动更新视图
+            a 谁选中（哪个对象处在编辑状态）√
+            b 景点属性对应 同步 √
+            c 模型景点绑定关系的实时获取 √
+            d 模型属性改变对应同步 。。
+        2 选中时改变样式√
+        3 引入底图 √ 引入真实数据 底图  属性修改对应同步 。。
+        4 
+        6 工具栏 控制 旋转 位移 缩放 √
+        7 是否锁定
+        8 创建 盒子的功能
+        9 景点选中的 同步 √
+        10 考虑场景中引入的 建筑物
+        11 在场景中标记模型 √
+        12 景点 建筑物 不能在 y 轴 移动 √
+        13 景点内的呈现物都展示（呈现物选中和它对应的属性栏选中的对应关系）√
+        14 拖动碰撞停止 √
+        15 控制场景时的卡顿（部分文字选中暂停）√
+        16 快捷键 控制旋转 缩放 位移 √
+        17 点击3d时 地图是从旁边过来的 √
+
+        底图在旋转的时候有时不可见
+        
+        每天要把自己的代码处理好 再下班
+
+
+
+
+        所有的子组建 都能访问 store 的数据
+        mapGetters 辅助函数仅仅是将 store 中的 getters 映射到局部计算属性：
+        methods: {
+            ...mapMutations([
+              'increment' // 映射 this.increment() 为 this.$store.commit('increment')
+            ]),
+            ...mapMutations({
+              add: 'increment' // 映射 this.add() 为 this.$store.commit('increment')
+            })
+        }
+
+        methods: {
+            ...mapActions([
+              'increment' // 映射 this.increment() 为 this.$store.dispatch('increment')
+            ]),
+            ...mapActions({
+              add: 'increment' // 映射 this.add() 为 this.$store.dispatch('increment')
+            })
+        }
+
+
+        v-bind 将待办项传递到每一个代办的组件中
+        <div id="app-7">
+          <ol>
+            <todo-item v-for="item in groceryList" v-bind:todo="item"></todo-item>
+          </ol>
+        </div>
+        Vue.component('todo-item', {
+          props: ['todo'],
+          template: '<li>{{ todo.text }}</li>'
+        })
+        v-model 能轻松实现表单输入和应用状态之间的双向绑定
+    -->
+
+    <!--
+        横屏导览
+
+        1 安放位置 与 获取天气的城市 可能不一样 √
+        2 点击拍照签名（上传照片后） 再点击拍照签名 有问题 √
+        3 景点详情列表有问题 √
+    -->
+</body>
+</html>

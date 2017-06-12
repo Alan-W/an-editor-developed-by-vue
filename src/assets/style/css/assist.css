@@ -1,0 +1,21 @@
+/* line 1, ../sass/assist.scss */
+.testdiv {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+/* line 6, ../sass/assist.scss */
+.testdiv .testqrcode {
+  width: 100px;
+  height: 100px;
+}
+/* line 9, ../sass/assist.scss */
+.testdiv .testqrcode img {
+  width: 100px;
+  height: 100px;
+}
+/* line 14, ../sass/assist.scss */
+.testdiv .testperson {
+  width: 100px;
+}

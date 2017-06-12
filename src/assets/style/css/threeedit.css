@@ -1,0 +1,56 @@
+/* line 1, ../sass/threeedit.scss */
+.three-mode {
+  position: fixed;
+  top: 82px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  background: #ddbcbc;
+}
+/* line 12, ../sass/threeedit.scss */
+.three-mode .textul {
+  position: absolute;
+  top: 90px;
+  left: 300px;
+  z-index: 300;
+}
+/* line 19, ../sass/threeedit.scss */
+.three-mode #threesection .transform-action {
+  display: none;
+}
+/* line 23, ../sass/threeedit.scss */
+.three-mode #threesection .threescenic:hover .threescenicname {
+  cursor: default;
+}
+/* line 27, ../sass/threeedit.scss */
+.three-mode #threesection .threescenic:hover .threescenicimg {
+  cursor: pointer;
+  border: solid 2px #d4237a;
+}
+/* line 34, ../sass/threeedit.scss */
+.three-mode #threesection .threescenic .threescenicname {
+  cursor: default;
+}
+/* line 38, ../sass/threeedit.scss */
+.three-mode #threesection .threescenic .threescenicimg:hover {
+  cursor: pointer;
+  border: solid 2px #d4237a;
+}
+/* line 45, ../sass/threeedit.scss */
+.three-mode #threesection .threescenic.active .threescenicname {
+  cursor: default;
+  color: #d4237a !important;
+}
+/* line 50, ../sass/threeedit.scss */
+.three-mode #threesection .threescenic.active .threescenicimg {
+  cursor: pointer;
+  border: solid 2px #d4237a;
+}
+/* line 57, ../sass/threeedit.scss */
+.three-mode .attr {
+  position: relative;
+  z-index: 200;
+  float: right;
+}

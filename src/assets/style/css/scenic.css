@@ -1,0 +1,319 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+.edit-left .nail-img{
+	position: absolute;
+    right: -10px;
+    top: -10px;
+    z-index: 500;
+    cursor: pointer;
+    width: 30px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+}
+.switch-btn-wrapper.bottom-nail {
+	position: fixed;
+	bottom: 0;
+	display: block;
+	left: 50%;
+	margin-left:-16px;
+	height: 20px;
+	cursor: pointer;
+}
+.edit-left {
+	position: absolute;
+	z-index: 2000;
+	height: 100%;
+	/*padding-top: 52px;*/
+}
+.edit-left .nail-berth{
+	position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+	z-index: 200;
+    background-color: #dcdcdc;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    text-align: center;
+    width: 20px;
+    height: 70px;
+    line-height: 70px;
+    cursor: pointer;
+}
+.scenicBox .scenicSelect{
+	margin: 55px 0 0 0;
+	width: 100%;
+	height: 50px;
+	font-size: 16px;
+}
+.scenicBox .scenicSelect select,.scenicBox .scenicSelect select option{
+	width: 100%;
+	height: 50px;
+}
+.folderBox .tree,.folderBox .tree ul,.folderBox .tree li{
+	list-style:none;
+	margin:0;
+	padding:0;
+	zoom: 1;
+}
+.folderBox .tree ul{
+	margin-left:15px;
+	cursor: pointer;
+}
+.folderBox .tree li a{
+	color:#333;
+	padding:.1em 7px .1em 55px;
+	display:block;
+	text-decoration:none;
+	/*border:1px dashed #fff;*/
+	background:url(../../img/edit/place.png) no-repeat; 
+	background-size: 8%;
+	background-position-y: 4px;
+	cursor: pointer;
+}
+
+.folderBox .tree li a.scene-active{
+	color: #ff0000;
+} 
+.folderBox .tree li a.tree-parent{
+	background:url(../../img/edit/icon-folder-open.png) 5px 50% no-repeat;
+}
+.folderBox .tree li a.tree-parent.seal{
+	background:url(../../img/edit/minus.png) 5px 50% no-repeat;
+}
+.folderBox .tree li a.tree-parent-collapsed{
+	background:url(../../img/edit/icon-folder.png) 5px 50% no-repeat;
+}
+.folderBox .tree li a.tree-parent-collapsed.seal{
+	background:url(../../img/edit/plus.png) 5px 50% no-repeat;
+}
+.folderBox .tree li a:hover,.folderBox .tree li a.tree-parent:hover,.folderBox .tree li a:focus,.folderBox .tree li a.tree-parent:focus,.folderBox .tree li a.tree-item-active{
+	color:#000;
+	/*border:1px solid #eee;*/
+	background-color:#e6e6e6;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+.folderBox .tree li a:focus,.folderBox .tree li a.tree-parent:focus,.folderBox .tree li a.tree-item-active{
+	/*border:1px solid #e2f3fb;*/
+	background-color:#e6e6e6;
+}
+.folderBox .tree li a.type1{
+	background:url(../../img/edit/type.png) no-repeat;
+	background-size: 8%;
+	background-position-y: 4px;
+}
+.folderBox .tree ul.tree-group-collapsed{
+	display:none;
+}
+/* 资源栏样式 */
+.edit-bottom{
+/* 	width: 100%;
+min-width: 1000px;
+height: 200px;
+box-sizing: border-box;
+padding-right: 300px;
+position: fixed;
+bottom: 0; */
+}
+.edit-bottom  .nail-img{
+	position: absolute;
+    bottom: 160px;
+    left: 50%;
+    z-index: 200;
+    cursor: pointer;
+    width: 30px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+}
+.edit-bottom .nail-berth{
+	position: absolute;
+    display: none;
+    bottom: 0;
+    left: 50%;
+	z-index: 200;
+    background-color: #FFF;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+.resourceBox{
+	
+}
+.resourceBox .resourseTop{
+	padding-left: 20px;
+	width: 100%;
+	height: 50px;
+}
+.resourceBox .resourseTop .textBox{
+	display: inline-block;
+	width: 49%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+}
+.resourceBox .resourseTop .searchBox{
+	text-align: right;
+	display: inline-block;
+	width: 50%;
+	height: 50px;
+}
+.resourceBox .resourseTop .searchBox input{
+	width: 150px;
+    height: 30px;
+}
+.resourceBox .resourseTop .searchBox img{
+	cursor: pointer;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+}
+
+.resourceBox .resourceTab{
+	float: left;
+	padding-left: 20px;
+}
+.resourceTab .tree,.resourceTab .tree ul,.resourceTab .tree li{
+	list-style:none;
+	margin:0;
+	padding:0;
+	zoom: 1;
+}
+.resourceTab .tree ul{
+	margin-left:15px;
+	overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+    white-space: nowrap;/*强制不换行*/
+}
+.resourceTab .tree li a{;
+	color:black;
+	padding:.1em 7px .1em 55px;
+	display:block;
+	text-decoration:none;
+	overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+    white-space: nowrap;/*强制不换行*/
+	/*border:1px dashed #fff;*/
+	background:url(../../img/edit/icon-folder-open.gif) 5px 50% no-repeat; 
+}
+.resourceTab .tree li a.tree-parent{
+	background:url(../../img/edit/icon-folder-open.png) 5px 50% no-repeat;
+}
+.resourceTab .tree li a.tree-parent-collapsed{
+	background:url(../../img/edit/icon-folder.png) 5px 50% no-repeat;
+}
+.resourceTab .tree li a:hover,.resourceTab .tree li a.tree-parent:hover,.resourceTab .tree li a:focus,.resourceTab .tree li a.tree-parent:focus,.resourceTab .tree li a.tree-item-active{
+	color:#000;
+	/*border:1px solid #333;*/
+	background-color:#e6e6e6;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+.resourceTab .tree li a:focus,.resourceTab .tree li a.tree-parent:focus,.resourceTab .tree li a.tree-item-active{
+	/*border:1px solid #333;*/
+	background-color:#e6e6e6;
+}
+.resourceTab .tree ul.tree-group-collapsed{
+	display:none;
+}
+.resourceBox .tabContent{
+	margin-left: 125px;
+	padding-right: 10px;
+	height: 100px;
+}
+.resourceBox .tabContent div{
+	display: none;
+	height: 100px;
+	/*border: 1px solid #333;*/
+	margin-left: 125px;
+}
+.resourceBox .tabContent div.select{
+	display: block;
+}
+.resourceBox .tabContent div ul{
+	height: 100px;
+}
+.resourceBox .tabContent div ul li{
+	display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+.resourceBox .tabContent div ul li a{
+    display: block;
+    vertical-align: middle;
+    width: 80px;
+    margin: 10px 0;
+}
+.resourceBox .tabContent div ul li a img{
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+}
+/* 显示信息页面样式 */
+#myPageBottom {
+	position: absolute;
+	bottom: 200px;
+	right: 300px;
+	background: #fff none repeat scroll 0 0;
+	background: rgba(255, 255, 255, 0.6);
+	margin: 10px auto;
+	font-size: 14px;
+}
+#myPageBottom input {
+	padding:6px;
+	width: 170px;
+	text-align: center;
+	background: rgba(255,255,255,0.6);
+	outline: none;
+	border: none;
+}
+#myPageBottom .column2{
+	padding-left: 25px;
+}
+#myPageBottom span{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	cursor: pointer;
+	text-align: center;
+}
+#myPageBottom .pickUp{
+	background-color: #00B7EE;
+}
+#myPageBottom span img{
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+}
+/* 全景图场景 */
+.eidtor-wrapper .edit-wrap .changeBox {
+    position: relative;
+    float: right;
+    margin: 5px;
+    cursor: pointer;
+}
+.eidtor-wrapper .edit-wrap .pano-scene {
+/* 	margin:5px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: solid 1px #eee;
+    background: #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; */
+} 

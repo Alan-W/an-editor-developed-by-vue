@@ -1,0 +1,3481 @@
+@charset "UTF-8";
+/* line 3, ../sass/_common.scss */
+html,
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+iframe,
+artical,
+section,
+header,
+footer,
+form {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 25, ../sass/_common.scss */
+a {
+  text-decoration: none !important;
+  color: #000;
+}
+
+/* line 29, ../sass/_common.scss */
+a:hover,
+a:link,
+a:visited {
+  text-decoration: none !important;
+  color: #000;
+}
+
+/* line 35, ../sass/_common.scss */
+a,
+button,
+input {
+  outline: none;
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+}
+
+/* line 44, ../sass/_common.scss */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* line 47, ../sass/_common.scss */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* line 52, ../sass/_common.scss */
+*:focus {
+  outline: 0;
+  border: 0;
+}
+
+/* line 57, ../sass/_common.scss */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #eee;
+}
+
+/* line 66, ../sass/_common.scss */
+*::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #ccc;
+}
+
+/* line 72, ../sass/_common.scss */
+.greyscale img {
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+/* line 79, ../sass/_common.scss */
+.greyscale img:hover {
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -ms-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+/* line 87, ../sass/_common.scss */
+html,
+body {
+  min-height: 100%;
+  font-family: "Microsoft Yahei","Helvetica Neue",Helvetica,Arial;
+  background-color: #e6e6e6;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 97, ../sass/_common.scss */
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+/* line 102, ../sass/_common.scss */
+.clearfix:before {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+/* line 108, ../sass/_common.scss */
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+/*  the animation css of the btn */
+/* line 115, ../sass/_common.scss */
+.btn-style {
+  position: relative;
+  box-sizing: border-box;
+  font-size: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  border: 0;
+  background: none;
+  box-shadow: inset 0 0 0 2px #f45e61;
+}
+
+/* line 130, ../sass/_common.scss */
+.btn-style::before,
+.btn-style::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  content: "";
+}
+
+/* line 140, ../sass/_common.scss */
+.spin {
+  width: 6em;
+  height: 6em;
+  padding: 0;
+}
+
+/* line 145, ../sass/_common.scss */
+.spin:hover {
+  color: #d4237a;
+}
+
+/* line 148, ../sass/_common.scss */
+.spin::before,
+.spin::after {
+  top: 0;
+  left: 0;
+}
+
+/* line 153, ../sass/_common.scss */
+.spin::before {
+  border: 2px solid transparent;
+}
+
+/* line 156, ../sass/_common.scss */
+.spin:hover::before {
+  -webkit-transition: border-top-color .15s linear, border-right-color .15s linear .1s, border-bottom-color .15s linear .2s;
+  transition: border-top-color .15s linear, border-right-color .15s linear .1s, border-bottom-color .15s linear .2s;
+  border-top-color: #d4237a;
+  border-right-color: #d4237a;
+  border-bottom-color: #d4237a;
+}
+
+/* line 164, ../sass/_common.scss */
+.spin::after {
+  border: 0 solid transparent;
+}
+
+/* line 167, ../sass/_common.scss */
+.spin:hover::after {
+  -webkit-transition: -webkit-transform .4s linear 0s, border-left-width 0s linear .35s;
+  transition: transform .4s linear 0s, border-left-width 0s linear .35s;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  border-top: 2px solid #d4237a;
+  border-right-width: 2px;
+  border-left-width: 2px;
+}
+
+/* line 179, ../sass/_common.scss */
+.circle {
+  border-radius: 100%;
+  box-shadow: none;
+}
+
+/* line 183, ../sass/_common.scss */
+.circle::before,
+.circle::after {
+  border-radius: 100%;
+}
+
+/* line 188, ../sass/_common.scss */
+.draw {
+  -webkit-transition: color .25s;
+  transition: color .25s;
+}
+
+/* line 192, ../sass/_common.scss */
+.draw::before,
+.draw::after {
+  width: 0;
+  height: 0;
+  border: 2px solid transparent;
+}
+
+/* line 199, ../sass/_common.scss */
+.draw::before {
+  top: 0;
+  left: 0;
+}
+
+/* line 203, ../sass/_common.scss */
+.draw::after {
+  right: 0;
+  bottom: 0;
+}
+
+/* line 210, ../sass/_common.scss */
+.draw:hover img {
+  transform: scale3d(1, 1, 1) !important;
+}
+
+/* line 213, ../sass/_common.scss */
+.draw:hover::before,
+.draw:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 218, ../sass/_common.scss */
+.draw:hover::before {
+  -webkit-transition: width .25s ease-out, height .25s ease-out .25s;
+  transition: width .25s ease-out, height .25s ease-out .25s;
+  border-top-color: #d81e06;
+  border-right-color: #d81e06;
+}
+
+/* line 225, ../sass/_common.scss */
+.draw:hover::after {
+  -webkit-transition: border-color 0s ease-out .5s, width .25s ease-out .5s, height .25s ease-out .75s;
+  transition: border-color 0s ease-out .5s, width .25s ease-out .5s, height .25s ease-out .75s;
+  border-bottom-color: #d81e06;
+  border-left-color: #d81e06;
+}
+
+/* line 233, ../sass/_common.scss */
+.popover {
+  top: -70px;
+  left: -45px;
+  width: 140px;
+}
+/* line 238, ../sass/_common.scss */
+.popover .btn {
+  width: 40px;
+  padding: 3px;
+  font-size: 12px;
+}
+
+/* line 246, ../sass/_common.scss */
+.fr {
+  float: right;
+}
+
+/* line 249, ../sass/_common.scss */
+.draggable {
+  cursor: pointer !important;
+}
+
+/* focus-loading */
+/* line 253, ../sass/_common.scss */
+.focus-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: bounce 2.0s infinite ease-in-out;
+  animation: bounce 2.0s infinite ease-in-out;
+  opacity: .6;
+  border-radius: 50%;
+  background-color: #67cf22;
+}
+
+/* line 268, ../sass/_common.scss */
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+    100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes bounce {
+  0%,
+    100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/* line 292, ../sass/_common.scss */
+.drag-active {
+  background-color: #f8f3f3;
+}
+/* line 294, ../sass/_common.scss */
+.drag-active .txt {
+  color: #337ab7 !important;
+}
+
+/* line 298, ../sass/_common.scss */
+.switch-btn-wrapper {
+  display: inline-block;
+  width: 38px;
+  height: 20px;
+  border-radius: 15px;
+  border: 1px solid #d0d0d0;
+  background-color: #FFF;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+/* line 307, ../sass/_common.scss */
+.switch-btn-wrapper .switch-open {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #00B7EE;
+  display: inline-block;
+  float: right;
+  cursor: pointer;
+}
+/* line 316, ../sass/_common.scss */
+.switch-btn-wrapper .switch-close {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #ccc;
+  display: inline-block;
+  float: left;
+  cursor: pointer;
+}
+/* line 325, ../sass/_common.scss */
+.switch-btn-wrapper .active-state {
+  transform: scale3d(1, 1, 1);
+}
+
+/* line 329, ../sass/_common.scss */
+.edit-cancel, .add-cancel {
+  display: block;
+  position: absolute;
+  top: 7px;
+  right: 25px;
+  width: 10px;
+  vertical-align: middle;
+  z-index: 12;
+}
+
+/* line 338, ../sass/_common.scss */
+.edit-input {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  border: 1px solid #eee;
+  height: 100% !important;
+  border: none;
+  padding: 2px;
+  z-index: 5;
+  transform-origin: 50% 50% 0;
+  -webkit-transform-origin: 50% 50% 0;
+  transform: transition(all 0.3s ease-in-out);
+}
+
+/* line 352, ../sass/_common.scss */
+.edit-loc-show {
+  width: 85% !important;
+}
+
+/* line 355, ../sass/_common.scss */
+.block-show {
+  display: block !important;
+}
+
+/* line 359, ../sass/_common.scss */
+.deletebtn {
+  position: absolute;
+  width: 10px !important;
+  vertical-align: middle;
+  margin-top: -3px;
+  display: block;
+  right: 10px;
+  top: 9px;
+  display: none;
+  z-index: 200;
+}
+
+/* line 370, ../sass/_common.scss */
+.delete-loc-wrap {
+  top: -80px;
+  left: 20px;
+}
+
+/* line 374, ../sass/_common.scss */
+.mainbar {
+  height: 100%;
+}
+
+/* line 377, ../sass/_common.scss */
+body {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* line 381, ../sass/_common.scss */
+.scale1 {
+  transform: scale3d(1, 1, 1);
+}
+
+/* line 384, ../sass/_common.scss */
+.scale0 {
+  transform: scale3d(0, 0, 0);
+  display: none;
+}
+
+/* line 388, ../sass/_common.scss */
+.has-droped {
+  color: #f00 !important;
+}
+
+/* line 392, ../sass/_common.scss */
+.modal-backdrop {
+  z-index: 20;
+}
+
+/* line 395, ../sass/_common.scss */
+.bold-show .txt {
+  font-weight: 800;
+}
+
+/* line 398, ../sass/_common.scss */
+.assert-drop-over {
+  color: #0ff !important;
+  font-weight: 800 !important;
+}
+
+/* line 402, ../sass/_common.scss */
+a.model, a.marker {
+  position: relative;
+}
+
+/* line 405, ../sass/_common.scss */
+.new-added-none {
+  display: none !important;
+}
+
+/* line 408, ../sass/_common.scss */
+#modelView {
+  display: none;
+  z-index: 30;
+}
+
+/* line 412, ../sass/_common.scss */
+.loc.has-pos-data {
+  font-weight: 600;
+}
+/* line 414, ../sass/_common.scss */
+.loc.has-pos-data .txt {
+  color: #13227a;
+}
+
+/* line 418, ../sass/_common.scss */
+.btn.btn-default.btn-area {
+  height: 32px;
+}
+
+/* line 421, ../sass/_common.scss */
+.loc-lock-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;
+}
+
+/* line 427, ../sass/_common.scss */
+.hide-lock {
+  display: none;
+}
+
+/* line 430, ../sass/_common.scss */
+.search-loc-wrap {
+  position: fixed;
+  top: 85px;
+  left: 295px;
+}
+/* line 434, ../sass/_common.scss */
+.search-loc-wrap .search-label {
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 24px;
+  text-align: center;
+  background-color: #00B7EE;
+  height: 24px;
+  line-height: 24px;
+  width: 50px;
+}
+/* line 447, ../sass/_common.scss */
+.search-loc-wrap .form-control {
+  border-radius: 24px;
+  height: 24px;
+  line-height: 24px;
+  padding: 0;
+  width: 200px;
+  text-indent: 10px;
+}
+
+/* line 456, ../sass/_common.scss */
+.identifiers-bind-list {
+  position: fixed;
+  left: 300px;
+  top: 90px;
+  z-index: 20;
+}
+/* line 461, ../sass/_common.scss */
+.identifiers-bind-list li {
+  min-width: 120px;
+}
+/* line 463, ../sass/_common.scss */
+.identifiers-bind-list li .event-item {
+  display: block;
+  padding: 0 35px;
+  position: relative;
+}
+/* line 467, ../sass/_common.scss */
+.identifiers-bind-list li .event-item .deletebtn {
+  position: absolute;
+  width: 10px !important;
+  vertical-align: middle;
+  margin-top: -3px;
+  display: block;
+  right: 10px;
+  top: 9px;
+  display: none;
+  z-index: 6500;
+}
+/* line 479, ../sass/_common.scss */
+.identifiers-bind-list li .event-item:hover .deletebtn {
+  display: block;
+}
+/* line 484, ../sass/_common.scss */
+.identifiers-bind-list li .drag-active {
+  background-color: inherit;
+}
+
+/* line 493, ../sass/_common.scss */
+.editor-info-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  width: 288px;
+  height: 140px;
+  display: none;
+}
+/* line 501, ../sass/_common.scss */
+.editor-info-wrap .alert {
+  padding-top: 30px;
+}
+/* line 503, ../sass/_common.scss */
+.editor-info-wrap .alert p {
+  margin-top: 20px;
+}
+
+/* line 144, ../sass/_common.scss */
+/* line 510, ../sass/_common.scss */
+.page-bottom-scanmode {
+  bottom: 0 !important;
+}
+
+/* line 513, ../sass/_common.scss */
+.map-prop-oper {
+  margin: 15px 0;
+}
+/* line 515, ../sass/_common.scss */
+.map-prop-oper .oper-wrap {
+  margin-bottom: 10px;
+  height: 30px;
+  line-height: 30px;
+}
+/* line 520, ../sass/_common.scss */
+.map-prop-oper .oper-wrap .props-name {
+  width: 135px !important;
+  margin-right: 45px !important;
+  display: inline-block !important;
+}
+/* line 526, ../sass/_common.scss */
+.map-prop-oper .oper-wrap .switch-btn-wrapper {
+  float: right;
+  margin-top: 5px;
+  margin-right: 21px;
+}
+/* line 530, ../sass/_common.scss */
+.map-prop-oper .oper-wrap .switch-btn-wrapper .switch-close, .map-prop-oper .oper-wrap .switch-btn-wrapper .switch-open {
+  display: none;
+}
+/* line 535, ../sass/_common.scss */
+.map-prop-oper .oper-wrap .switch-active .switch-open {
+  display: block;
+}
+/* line 538, ../sass/_common.scss */
+.map-prop-oper .oper-wrap .switch-active .switch-close {
+  display: none;
+}
+/* line 544, ../sass/_common.scss */
+.map-prop-oper .oper-wrap .switch-off .switch-open {
+  display: none;
+}
+/* line 547, ../sass/_common.scss */
+.map-prop-oper .oper-wrap .switch-off .switch-close {
+  display: block;
+}
+
+/* line 147, ../sass/_common.scss */
+/* line 555, ../sass/_common.scss */
+.page-bottom-editmode {
+  right: 580px !important;
+}
+
+/* line 558, ../sass/_common.scss */
+.assert-disabled {
+  background-color: gray !important;
+}
+/* line 560, ../sass/_common.scss */
+.assert-disabled img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+/* line 570, ../sass/_common.scss */
+.assert-disabled .txt {
+  color: #ccc !important;
+}
+
+/* line 574, ../sass/_common.scss */
+.assert-quote-list-wrapper {
+  font-size: 12px;
+  margin-top: 10px;
+  padding: 10px;
+}
+/* line 578, ../sass/_common.scss */
+.assert-quote-list-wrapper .quote-tag {
+  display: inline-block;
+  width: 65px;
+}
+/* line 582, ../sass/_common.scss */
+.assert-quote-list-wrapper .quote-list-wrap {
+  float: right;
+  width: 150px;
+  margin-right: 30px;
+  height: 200px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+/* line 589, ../sass/_common.scss */
+.assert-quote-list-wrapper .quote-list-wrap .list-group {
+  margin-bottom: 0;
+}
+
+/* line 597, ../sass/_common.scss */
+.show-assert-wrapper {
+  position: absolute;
+  z-index: 1000;
+  text-align: center;
+  border-radius: 3px;
+  right: 20px;
+  bottom: 120px;
+  display: none;
+  width: 240px;
+}
+/* line 606, ../sass/_common.scss */
+.show-assert-wrapper #show2DIdentifyASssert {
+  display: none;
+  background-color: #FFF;
+  border-radius: 3px;
+}
+/* line 610, ../sass/_common.scss */
+.show-assert-wrapper #show2DIdentifyASssert img {
+  max-width: 120px;
+  max-height: 250px;
+  margin: 10px;
+}
+/* line 616, ../sass/_common.scss */
+.show-assert-wrapper #show3DsceneAssert {
+  display: none;
+  margin: 10px;
+}
+/* line 620, ../sass/_common.scss */
+.show-assert-wrapper #showVideo {
+  display: none;
+  width: 100%;
+}
+/* line 623, ../sass/_common.scss */
+.show-assert-wrapper #showVideo video {
+  width: 100%;
+}
+
+/* line 630, ../sass/_common.scss */
+.sceneul {
+  position: fixed;
+  top: 85px;
+  right: 280px;
+  height: 30px;
+  z-index: 200;
+}
+/* line 636, ../sass/_common.scss */
+.sceneul .mode-item {
+  cursor: pointer;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: #fff;
+  margin: 0 3px;
+  border-radius: 30px;
+}
+/* line 646, ../sass/_common.scss */
+.sceneul .mode-item:hover {
+  background: #00B7EE;
+  color: #fff;
+}
+/* line 651, ../sass/_common.scss */
+.sceneul .active {
+  background: #00B7EE;
+  color: #fff;
+}
+
+/* line 657, ../sass/_common.scss */
+.img-type-prop .logo {
+  position: relative;
+}
+/* line 659, ../sass/_common.scss */
+.img-type-prop .logo .img-scan {
+  border: 1px solid #eee;
+}
+/* line 662, ../sass/_common.scss */
+.img-type-prop .logo .btn.btn-success {
+  float: right;
+  margin-top: -60px;
+  height: 25px;
+  padding: 2px 12px;
+  margin-right: 23px;
+}
+/* line 669, ../sass/_common.scss */
+.img-type-prop .logo .btn-danger.clear-image {
+  padding: 2px 12px;
+  position: absolute;
+  top: 50%;
+  right: 23px;
+}
+/* line 675, ../sass/_common.scss */
+.img-type-prop .logo .map-choose-img {
+  margin-top: -70px !important;
+}
+
+/* line 680, ../sass/_common.scss */
+.pano-oper-wrap {
+  text-align: center;
+}
+/* line 682, ../sass/_common.scss */
+.pano-oper-wrap .btn {
+  margin: 10px;
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+/* line 690, ../sass/_common.scss */
+.default-point .input-wra {
+  float: right;
+}
+/* line 692, ../sass/_common.scss */
+.default-point .input-wra .point-name {
+  display: table-cell;
+  color: #555;
+  width: 20px;
+  padding: 4px 6px 4px 0;
+  font-size: 12px;
+  vertical-align: middle;
+}
+/* line 701, ../sass/_common.scss */
+.default-point .input-wra .form-control {
+  vertical-align: middle;
+  border-radius: 4px !important;
+  height: 25px !important;
+  padding: 2px 5px !important;
+  width: 157px !important;
+}
+
+/* line 710, ../sass/_common.scss */
+.pano-scene.disabled {
+  color: #ACA899 !important;
+  background-color: #f5f5f5 !important;
+  border: 1px solid #ddd !important;
+  cursor: default !important;
+}
+/* line 715, ../sass/_common.scss */
+.pano-scene.disabled:hover {
+  color: #ACA899 !important;
+  background-color: #f5f5f5 !important;
+  border: 1px solid #ddd !important;
+  cursor: default !important;
+}
+
+/* line 722, ../sass/_common.scss */
+.edit-ok, .add-loc-btn {
+  position: absolute;
+  width: 15px;
+  right: 2px;
+  top: 5px;
+  vertical-align: middle;
+  z-index: 12;
+}
+
+/* line 730, ../sass/_common.scss */
+.edit-ing {
+  display: none;
+  position: absolute;
+  vertical-align: middle;
+  right: 2px;
+  top: 5px;
+  width: 15px;
+  z-index: 3;
+}
+
+/* line 739, ../sass/_common.scss */
+.delte-loc-ing {
+  display: none;
+  position: absolute;
+  vertical-align: middle;
+  right: 40px;
+  top: 5px;
+  width: 15px;
+  z-index: 3;
+}
+
+/* line 748, ../sass/_common.scss */
+.add-loc-ing {
+  display: none;
+  position: absolute;
+  vertical-align: middle;
+  right: 20px;
+  top: 5px;
+  width: 15px;
+  z-index: 3;
+}
+
+/* line 757, ../sass/_common.scss */
+.edit-loc-wrap, .add-loc-wrap {
+  transform: transition(all 0.3s ease-in-out);
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  transform-origin: 50% 50% 0;
+  -webkit-transform-origin: 50% 50% 0;
+}
+
+/* line 770, ../sass/_common.scss */
+.tree-list ul:before {
+  position: absolute;
+  border-left: 1px dotted #000;
+  content: "";
+  width: 20px;
+  top: 20px;
+  left: 5px;
+  bottom: 10px;
+}
+
+/* line 780, ../sass/_common.scss */
+.tree-list ul > li:before {
+  position: absolute;
+  border-top: 1px dotted #000;
+  content: "";
+  width: 15px;
+  top: 13px;
+  left: -15px;
+}
+
+/* line 790, ../sass/_common.scss */
+li.active > a.loc > span.fa-plus-square:before {
+  content: "" !important;
+  font-size: 15px;
+  color: #000 !important;
+}
+
+/* line 795, ../sass/_common.scss */
+li > a.loc > span.fa-folder-o:before {
+  content: "" !important;
+  font-size: 15px;
+  color: #000 !important;
+}
+
+/* line 800, ../sass/_common.scss */
+.collapse.in {
+  padding-left: 20px;
+}
+
+/* line 803, ../sass/_common.scss */
+.model .fa:before {
+  display: inline-block;
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: url(../../../../static/img/mol.png) no-repeat;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* line 812, ../sass/_common.scss */
+.role .fa:before {
+  display: inline-block;
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: url(../../../../static/img/mol.png) no-repeat;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* line 821, ../sass/_common.scss */
+.marker .fa:after {
+  display: inline-block;
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: url(../../../../static/img/marker.png) no-repeat;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* line 830, ../sass/_common.scss */
+.identify .fa:after {
+  display: inline-block;
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: url(../../../../static/img/marker.png) no-repeat;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* line 839, ../sass/_common.scss */
+.model.baike-role .fa:before {
+  display: inline-block;
+  content: '';
+  width: 16px;
+  height: 16px;
+  background: url(../../../../static/img/info.png) no-repeat;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* line 848, ../sass/_common.scss */
+.role.baike-role .fa:before {
+  display: inline-block;
+  content: '';
+  width: 16px;
+  height: 16px;
+  background: url(../../../../static/img/info.png) no-repeat;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* line 857, ../sass/_common.scss */
+.model.video-role .fa:before {
+  display: inline-block;
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: url(../../../../static/img/video.png) no-repeat;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* line 866, ../sass/_common.scss */
+.role.video-role .fa:before {
+  display: inline-block;
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: url(../../../../static/img/video.png) no-repeat;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* line 875, ../sass/_common.scss */
+li.active > a.loc .fa:after {
+  display: inline-block;
+  content: '';
+  width: 19px;
+  height: 19px;
+  background: url(../../../../static/img/loc-open.png) no-repeat;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* line 884, ../sass/_common.scss */
+.loc .fa:after {
+  display: inline-block;
+  content: '';
+  width: 15px;
+  height: 18px;
+  background: url(../../../../static/img/loc.png) no-repeat;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* line 893, ../sass/_common.scss */
+.range .txt {
+  color: #13227a;
+}
+
+/* line 896, ../sass/_common.scss */
+.fa.fa-plus-square:before {
+  content: "" !important;
+  margin-right: 12px;
+  font-size: 15px;
+  color: #000 !important;
+}
+
+/* line 902, ../sass/_common.scss */
+.fa.fa-file:before {
+  display: inline-block;
+  content: "" !important;
+  width: 15px;
+  height: 15px;
+  background: url(../../../../static/img/loc.png) no-repeat;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* line 911, ../sass/_common.scss */
+ul li.active > a > .fa.fa-plus-square:before {
+  content: "" !important;
+}
+
+/* line 916, ../sass/_common.scss */
+.source-id-item .source-id {
+  position: relative;
+}
+/* line 918, ../sass/_common.scss */
+.source-id-item .source-id .source-id-prop-item {
+  width: 120px !important;
+  display: table-cell;
+}
+/* line 923, ../sass/_common.scss */
+.source-id-item .source-id .props-con input {
+  height: 25px;
+  padding: 2px 5px;
+}
+/* line 928, ../sass/_common.scss */
+.source-id-item .source-id .view-zip-resource, .source-id-item .source-id .view-material-resource {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 40px;
+  padding: 1px 2px !important;
+}
+
+/* line 939, ../sass/_common.scss */
+div#canvas-frame {
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #EEEEEE;
+}
+
+/* line 950, ../sass/_common.scss */
+div#fixed-canvas {
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 90px;
+  right: 300px;
+  z-index: 1;
+}
+
+/* line 960, ../sass/_common.scss */
+.sortable-ghost {
+  background-color: #f00 !important;
+}
+
+/* line 963, ../sass/_common.scss */
+.sortable-drag {
+  background-color: #ff0 !important;
+}
+
+/* line 966, ../sass/_common.scss */
+.sortable-chosen {
+  color: #f00 !important;
+}
+
+/* line 969, ../sass/_common.scss */
+.error-tip-info {
+  position: fixed;
+  top: 82px;
+  left: 300px;
+  width: 300px;
+  z-index: 500;
+}
+
+/* line 976, ../sass/_common.scss */
+.add-new-loc-wrap {
+  position: absolute;
+  left: 100px;
+  width: 170px;
+  z-index: 100;
+  padding: 1px;
+  text-align: left;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #FFF;
+  background-clip: padding-box;
+}
+/* line 988, ../sass/_common.scss */
+.add-new-loc-wrap .arrow {
+  top: -11px;
+  left: 80%;
+  border-width: 11px;
+  margin-left: -11px;
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+  border-top-width: 0;
+}
+/* line 995, ../sass/_common.scss */
+.add-new-loc-wrap .arrow:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 1px;
+  margin-left: -10px;
+  border-bottom-color: #fff;
+  border-width: 10px;
+  border-top-width: 10px;
+  border-color: transparent;
+  border-style: solid;
+  display: block;
+  content: "";
+}
+/* line 1010, ../sass/_common.scss */
+.add-new-loc-wrap .title {
+  padding: 8px 14px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 5px 5px 0 0;
+}
+/* line 1019, ../sass/_common.scss */
+.add-new-loc-wrap .content {
+  padding: 9px 14px;
+}
+/* line 1021, ../sass/_common.scss */
+.add-new-loc-wrap .content .form-control {
+  margin-bottom: 15px;
+}
+/* line 1024, ../sass/_common.scss */
+.add-new-loc-wrap .content .btn {
+  width: 40px;
+  padding: 3px;
+  font-size: 12px;
+}
+
+/* line 2, ../sass/edit.scss */
+.mainbar {
+  height: 100%;
+}
+
+/* line 5, ../sass/edit.scss */
+body {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* line 9, ../sass/edit.scss */
+.scale1 {
+  transform: scale3d(1, 1, 1);
+}
+
+/* line 12, ../sass/edit.scss */
+.scale0 {
+  transform: scale3d(0, 0, 0);
+  display: none;
+}
+
+/* line 16, ../sass/edit.scss */
+.has-droped {
+  color: #f00 !important;
+}
+
+/* line 20, ../sass/edit.scss */
+.modal-backdrop {
+  z-index: 20;
+}
+
+/* line 23, ../sass/edit.scss */
+.bold-show .txt {
+  font-weight: 800;
+}
+
+/* line 26, ../sass/edit.scss */
+.assert-drop-over {
+  color: #0ff !important;
+  font-weight: 800 !important;
+}
+
+/* line 30, ../sass/edit.scss */
+a.model, a.marker {
+  position: relative;
+}
+
+/* line 33, ../sass/edit.scss */
+.new-added-none {
+  display: none !important;
+}
+
+/* line 36, ../sass/edit.scss */
+#modelView {
+  display: none;
+  z-index: 30;
+}
+
+/* line 40, ../sass/edit.scss */
+.loc.has-pos-data {
+  font-weight: 600;
+}
+
+/* line 43, ../sass/edit.scss */
+.btn.btn-default.btn-area {
+  height: 32px;
+}
+
+/* line 46, ../sass/edit.scss */
+.loc-lock-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;
+}
+
+/* line 52, ../sass/edit.scss */
+.hide-lock {
+  display: none;
+}
+
+/* line 55, ../sass/edit.scss */
+.search-loc-wrap {
+  position: fixed;
+  top: 85px;
+  left: 295px;
+}
+/* line 59, ../sass/edit.scss */
+.search-loc-wrap .search-label {
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 24px;
+  text-align: center;
+  background-color: #00B7EE;
+  height: 24px;
+  line-height: 24px;
+  width: 50px;
+}
+/* line 72, ../sass/edit.scss */
+.search-loc-wrap .form-control {
+  border-radius: 24px;
+  height: 24px;
+  line-height: 24px;
+  padding: 0;
+  width: 200px;
+  text-indent: 10px;
+}
+
+/* line 81, ../sass/edit.scss */
+.identifiers-bind-list {
+  position: fixed;
+  left: 300px;
+  top: 90px;
+  z-index: 6000;
+  border: 1px solid #d0d0d0;
+  border-radius: 10px;
+}
+/* line 88, ../sass/edit.scss */
+.identifiers-bind-list li {
+  cursor: pointer;
+  padding: 10px 5px;
+  background-color: #FAFAFA;
+  border-bottom: 1px solid #d0d0d0;
+}
+/* line 93, ../sass/edit.scss */
+.identifiers-bind-list li .event-item {
+  display: block;
+  padding: 0 35px;
+}
+/* line 96, ../sass/edit.scss */
+.identifiers-bind-list li .event-item .deletebtn {
+  position: absolute;
+  width: 10px !important;
+  vertical-align: middle;
+  margin-top: -3px;
+  display: block;
+  right: 10px;
+  top: 9px;
+  display: none;
+  z-index: 6500;
+}
+/* line 108, ../sass/edit.scss */
+.identifiers-bind-list li .event-item:hover .deletebtn {
+  display: block;
+}
+/* line 113, ../sass/edit.scss */
+.identifiers-bind-list li .drag-active {
+  background-color: inherit;
+}
+/* line 117, ../sass/edit.scss */
+.identifiers-bind-list li:last-child {
+  border-bottom: none;
+}
+
+/* line 125, ../sass/edit.scss */
+.editor-info-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  width: 288px;
+  height: 140px;
+  display: none;
+}
+/* line 133, ../sass/edit.scss */
+.editor-info-wrap .alert {
+  padding-top: 30px;
+}
+/* line 135, ../sass/edit.scss */
+.editor-info-wrap .alert p {
+  margin-top: 20px;
+}
+
+/* line 144, ../sass/_common.scss */
+/* line 142, ../sass/edit.scss */
+.page-bottom-scanmode {
+  bottom: 0 !important;
+}
+
+/* line 145, ../sass/edit.scss */
+.map-prop-oper {
+  margin: 15px 0;
+}
+/* line 147, ../sass/edit.scss */
+.map-prop-oper .oper-wrap {
+  margin-bottom: 10px;
+  height: 30px;
+  line-height: 30px;
+}
+/* line 152, ../sass/edit.scss */
+.map-prop-oper .oper-wrap .props-name {
+  width: 135px !important;
+  margin-right: 45px !important;
+  display: inline-block !important;
+}
+/* line 158, ../sass/edit.scss */
+.map-prop-oper .oper-wrap .switch-btn-wrapper {
+  float: right;
+  margin-top: 5px;
+  margin-right: 21px;
+}
+/* line 162, ../sass/edit.scss */
+.map-prop-oper .oper-wrap .switch-btn-wrapper .switch-close, .map-prop-oper .oper-wrap .switch-btn-wrapper .switch-open {
+  display: none;
+}
+/* line 167, ../sass/edit.scss */
+.map-prop-oper .oper-wrap .switch-active .switch-open {
+  display: block;
+}
+/* line 170, ../sass/edit.scss */
+.map-prop-oper .oper-wrap .switch-active .switch-close {
+  display: none;
+}
+/* line 176, ../sass/edit.scss */
+.map-prop-oper .oper-wrap .switch-off .switch-open {
+  display: none;
+}
+/* line 179, ../sass/edit.scss */
+.map-prop-oper .oper-wrap .switch-off .switch-close {
+  display: block;
+}
+
+/* line 147, ../sass/_common.scss */
+/* line 187, ../sass/edit.scss */
+.page-bottom-editmode {
+  right: 580px !important;
+}
+
+/* line 190, ../sass/edit.scss */
+.assert-disabled {
+  background-color: gray !important;
+}
+/* line 192, ../sass/edit.scss */
+.assert-disabled img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+/* line 202, ../sass/edit.scss */
+.assert-disabled .txt {
+  color: #ccc !important;
+}
+
+/* line 206, ../sass/edit.scss */
+.assert-quote-list-wrapper {
+  font-size: 12px;
+  margin-top: 10px;
+  padding: 10px;
+}
+/* line 210, ../sass/edit.scss */
+.assert-quote-list-wrapper .quote-tag {
+  display: inline-block;
+  width: 65px;
+}
+/* line 214, ../sass/edit.scss */
+.assert-quote-list-wrapper .quote-list-wrap {
+  float: right;
+  width: 150px;
+  margin-right: 30px;
+  height: 200px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+/* line 221, ../sass/edit.scss */
+.assert-quote-list-wrapper .quote-list-wrap .list-group {
+  margin-bottom: 0;
+}
+
+/* line 229, ../sass/edit.scss */
+.show-assert-wrapper {
+  position: absolute;
+  z-index: 1000;
+  text-align: center;
+  border-radius: 3px;
+  right: 20px;
+  bottom: 120px;
+  display: none;
+  width: 240px;
+}
+/* line 238, ../sass/edit.scss */
+.show-assert-wrapper #show2DIdentifyASssert {
+  display: none;
+  background-color: #FFF;
+  border-radius: 3px;
+}
+/* line 242, ../sass/edit.scss */
+.show-assert-wrapper #show2DIdentifyASssert img {
+  max-width: 120px;
+  max-height: 250px;
+  margin: 10px;
+}
+/* line 248, ../sass/edit.scss */
+.show-assert-wrapper #show3DsceneAssert {
+  display: none;
+  margin: 10px;
+}
+/* line 252, ../sass/edit.scss */
+.show-assert-wrapper #showVideo {
+  display: none;
+  width: 100%;
+}
+/* line 255, ../sass/edit.scss */
+.show-assert-wrapper #showVideo video {
+  width: 100%;
+}
+
+/* line 263, ../sass/edit.scss */
+.props-list .dropdown-select .dropdown-menu {
+  height: 250px;
+  max-height: 250px;
+  overflow-y: scroll;
+}
+/* line 269, ../sass/edit.scss */
+.props-list .dropdown-select .input-group .dropdown-toggle.select-caret {
+  height: 33px;
+}
+
+/* line 275, ../sass/edit.scss */
+.assert-draggable-active {
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  background-color: #FFF;
+}
+/* line 281, ../sass/edit.scss */
+.assert-draggable-active .txt {
+  color: #777;
+}
+
+/* line 286, ../sass/edit.scss */
+.source-id-item .source-id {
+  position: relative;
+}
+/* line 288, ../sass/edit.scss */
+.source-id-item .source-id .source-id-prop-item {
+  width: 120px !important;
+}
+/* line 292, ../sass/edit.scss */
+.source-id-item .source-id .view-zip-resource, .source-id-item .source-id .view-material-resource {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 40px;
+  padding: 1px 2px !important;
+}
+
+/* line 303, ../sass/edit.scss */
+.img-type-prop .logo {
+  position: relative;
+}
+/* line 305, ../sass/edit.scss */
+.img-type-prop .logo .img-scan {
+  border: 1px solid #eee;
+}
+/* line 308, ../sass/edit.scss */
+.img-type-prop .logo .btn.btn-success {
+  float: right;
+  margin-top: -60px;
+  height: 25px;
+  padding: 2px 12px;
+  margin-right: 23px;
+}
+/* line 315, ../sass/edit.scss */
+.img-type-prop .logo .btn-danger.clear-image {
+  display: none;
+  padding: 2px 12px;
+  position: absolute;
+  top: 60%;
+  right: 23px;
+}
+
+/* line 327, ../sass/edit.scss */
+.switch-btn-wrapper {
+  display: inline-block;
+  width: 38px;
+  height: 20px;
+  border-radius: 15px;
+  border: 1px solid #d0d0d0;
+  background-color: #FFF;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+/* line 336, ../sass/edit.scss */
+.switch-btn-wrapper .switch-open {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #00B7EE;
+  display: inline-block;
+  float: right;
+  cursor: pointer;
+}
+/* line 345, ../sass/edit.scss */
+.switch-btn-wrapper .switch-close {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #ccc;
+  display: inline-block;
+  float: left;
+  cursor: pointer;
+}
+/* line 354, ../sass/edit.scss */
+.switch-btn-wrapper .active-state {
+  transform: scale3d(1, 1, 1);
+}
+
+/* line 358, ../sass/edit.scss */
+#leftSwitchOff {
+  display: none;
+}
+
+/* line 361, ../sass/edit.scss */
+#rightSwitchOff {
+  display: none;
+  position: fixed !important;
+  top: 82px !important;
+  right: 0;
+}
+
+/* line 368, ../sass/edit.scss */
+#bindAssertsErrorTip, #syLinerImageErrorTip, #identiyfLogoErrorTip, #locDragErrorTip, #roleDragErrorTip {
+  position: fixed;
+  top: 82px;
+  left: 300px;
+  width: 300px;
+  z-index: 500;
+  display: none;
+}
+
+/* line 376, ../sass/edit.scss */
+.model-two {
+  display: none;
+  position: absolute;
+  top: 82px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+/* line 388, ../sass/edit.scss */
+.model-two img {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+/* line 401, ../sass/edit.scss */
+#folderAsserts .fa.fa-plus-square:before {
+  margin: 0 !important;
+}
+
+/* line 406, ../sass/edit.scss */
+.search-loc-active {
+  background-color: #1296db;
+  color: #fff;
+}
+/* line 409, ../sass/edit.scss */
+.search-loc-active span {
+  color: #fff !important;
+}
+/* line 412, ../sass/edit.scss */
+.search-loc-active:hover {
+  background-color: #f8f3f3;
+}
+/* line 414, ../sass/edit.scss */
+.search-loc-active:hover span {
+  color: #000 !important;
+}
+
+/* line 419, ../sass/edit.scss */
+.pano-scene.disabled {
+  color: #ACA899 !important;
+  background-color: #f5f5f5 !important;
+  border: 1px solid #ddd !important;
+  cursor: default !important;
+}
+/* line 424, ../sass/edit.scss */
+.pano-scene.disabled:hover {
+  color: #ACA899 !important;
+  background-color: #f5f5f5 !important;
+  border: 1px solid #ddd !important;
+  cursor: default !important;
+}
+
+/* line 431, ../sass/edit.scss */
+.edit-ok, .add-loc-btn {
+  position: absolute;
+  width: 15px;
+  right: 2px;
+  top: 5px;
+  vertical-align: middle;
+  z-index: 12;
+}
+
+/* line 439, ../sass/edit.scss */
+.edit-ing {
+  display: none;
+  position: absolute;
+  vertical-align: middle;
+  right: 2px;
+  top: 5px;
+  width: 15px;
+  z-index: 3;
+}
+
+/* line 448, ../sass/edit.scss */
+.delte-loc-ing {
+  display: none;
+  position: absolute;
+  vertical-align: middle;
+  right: 40px;
+  top: 5px;
+  width: 15px;
+  z-index: 3;
+}
+
+/* line 457, ../sass/edit.scss */
+.add-loc-ing {
+  display: none;
+  position: absolute;
+  vertical-align: middle;
+  right: 20px;
+  top: 5px;
+  width: 15px;
+  z-index: 3;
+}
+
+/* line 466, ../sass/edit.scss */
+.edit-loc-wrap, .add-loc-wrap {
+  transform: transition(all 0.3s ease-in-out);
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  transform-origin: 50% 50% 0;
+  -webkit-transform-origin: 50% 50% 0;
+}
+
+/* line 479, ../sass/edit.scss */
+.role-marker img {
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+}
+
+/* line 487, ../sass/edit.scss */
+.source-id .props-name {
+  float: left;
+}
+/* line 491, ../sass/edit.scss */
+.source-id .props-con input {
+  height: 25px;
+  padding: 2px 5px;
+}
+/* line 495, ../sass/edit.scss */
+.source-id .props-con .btn-success {
+  padding: 2px 12px;
+}
+
+/* line 500, ../sass/edit.scss */
+.confirm-change {
+  position: absolute;
+  width: 250px;
+  display: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 120px;
+  margin: auto;
+  z-index: 20;
+}
+/* line 512, ../sass/edit.scss */
+.confirm-change h5 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+/* line 516, ../sass/edit.scss */
+.confirm-change p {
+  text-align: center;
+}
+
+/* line 520, ../sass/edit.scss */
+.fileList {
+  height: 600px;
+  overflow-y: auto;
+}
+/* line 523, ../sass/edit.scss */
+.fileList .fileItem {
+  height: 200px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  max-height: 100%;
+  position: relative;
+}
+/* line 531, ../sass/edit.scss */
+.fileList .fileItem .source-logo {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  z-index: 10;
+}
+/* line 540, ../sass/edit.scss */
+.fileList .fileItem div {
+  background-color: #eee;
+  width: 200px;
+  height: 160px;
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  border-radius: 10px;
+}
+/* line 550, ../sass/edit.scss */
+.fileList .fileItem div img {
+  width: 100px;
+}
+/* line 553, ../sass/edit.scss */
+.fileList .fileItem div .folder-logo {
+  width: 60px;
+}
+/* line 557, ../sass/edit.scss */
+.fileList .fileItem p {
+  text-align: center;
+}
+/* line 562, ../sass/edit.scss */
+.fileList .material-item-active div {
+  background-color: #00B7EE;
+}
+
+/* line 567, ../sass/edit.scss */
+#addBaseToast {
+  top: 80px;
+  left: 120px;
+  width: auto;
+}
+/* line 572, ../sass/edit.scss */
+#addBaseToast .popover-content input {
+  margin-bottom: 20px;
+}
+
+/* line 582, ../sass/edit.scss */
+#materialSource .modal-dialog .modal-content .modal-header .btn.btn-success {
+  width: 100px;
+}
+
+/* line 589, ../sass/edit.scss */
+.edit-cancel, .add-cancel {
+  display: block;
+  position: absolute;
+  top: 7px;
+  right: 25px;
+  width: 10px;
+  vertical-align: middle;
+  z-index: 12;
+}
+
+/* line 598, ../sass/edit.scss */
+.edit-input {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  border: 1px solid #eee;
+  height: 100%;
+  border: none;
+  padding: 2px;
+  z-index: 5;
+  transform-origin: 50% 50% 0;
+  -webkit-transform-origin: 50% 50% 0;
+  transform: transition(all 0.3s ease-in-out);
+}
+
+/* line 612, ../sass/edit.scss */
+.edit-loc-show {
+  width: 85%;
+}
+
+/* line 616, ../sass/edit.scss */
+.deletebtn {
+  position: absolute;
+  width: 10px !important;
+  vertical-align: middle;
+  margin-top: -3px;
+  display: block;
+  right: 10px;
+  top: 9px;
+  display: none;
+  z-index: 200;
+}
+
+/* line 627, ../sass/edit.scss */
+.delete-loc-wrap {
+  top: -80px;
+  left: 20px;
+}
+
+/* line 632, ../sass/edit.scss */
+#confirmDeleteLoc .confirm-modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 640, ../sass/edit.scss */
+#confirmDeleteLoc .modal-dialog {
+  height: 250px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* line 648, ../sass/edit.scss */
+#confirmDeleteLoc .modal-dialog .modal-body {
+  text-align: center;
+}
+/* line 649, ../sass/edit.scss */
+#confirmDeleteLoc .modal-dialog .modal-body .modal-header {
+  padding-bottom: 30px;
+}
+/* line 653, ../sass/edit.scss */
+#confirmDeleteLoc .modal-dialog .modal-body .btn-danger {
+  margin-right: 30px;
+}
+
+/* line 660, ../sass/edit.scss */
+.eidtor-wrapper {
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
+/* line 664, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/* line 671, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker {
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  position: absolute;
+  color: #333;
+  cursor: pointer;
+}
+/* line 678, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title {
+  position: absolute;
+  font-size: 12px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+/* line 685, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title .marker-name {
+  display: block;
+  position: absolute;
+  width: 80px;
+  left: -29px;
+  font-size: 8px;
+  line-height: 12px;
+  cursor: pointer;
+  display: block;
+  text-shadow: 1px 1px 2px #fff;
+}
+/* line 696, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title .marker-icon-wrap {
+  width: 22px;
+  height: 22px;
+  display: block;
+  border-radius: 50deg;
+  transform: transition(all 0.2s ease-in-out);
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 704, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title .marker-icon-wrap img {
+  -webkit-filter: grayscale(0.8);
+  filter: grayscale(0.8);
+}
+/* line 708, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title .marker-icon-wrap:before, .eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title .marker-icon-wrap:after {
+  top: 0;
+  left: 0;
+}
+/* line 712, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title .marker-icon-wrap:before {
+  border: 1px solid transparent;
+}
+/* line 715, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title .marker-icon-wrap:after {
+  border: 0 solid transparent;
+}
+/* line 718, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title .marker-icon-wrap .marker-icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 1px;
+}
+/* line 723, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title .marker-icon-wrap .nav-btn-name {
+  font-size: 15px;
+}
+/* line 729, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title:hover .marker-name {
+  color: #33aee2;
+  text-shadow: 1px 1px 2px #fff;
+}
+/* line 734, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title:hover .marker-icon-wrap img {
+  -webkit-filter: none;
+  filter: none;
+}
+/* line 738, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title:hover .marker-icon-wrap:before {
+  border-top-color: #33aee2;
+  border-right-color: #33aee2;
+  border-bottom-color: #33aee2;
+  -webkit-transition: border-top-color 0.05s linear, border-right-color 0.05s linear 0.05s, border-bottom-color 0.05s linear 0.1s;
+  transition: border-top-color 0.05s linear, border-right-color 0.05s linear 0.05s, border-bottom-color 0.05s linear 0.1s;
+}
+/* line 745, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title:hover .marker-icon-wrap:after {
+  border-top: 1px solid #33aee2;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -webkit-transition: -webkit-transform 0.2s linear 0s, border-left-width 0s linear 0.15s;
+  transition: -webkit-transform 0.2s linear 0s, border-left-width 0s linear 0.15s;
+}
+/* line 756, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title:hover .nav-btn-name {
+  font-size: 15px;
+}
+/* line 762, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title-active {
+  position: absolute;
+  font-size: 12px;
+  text-align: center;
+}
+/* line 766, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title-active .marker-name {
+  text-shadow: none;
+  color: #966e3b;
+}
+/* line 772, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title-active .marker-icon-wrap .marker-icon {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+}
+/* line 778, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title-active .marker-icon-wrap:before {
+  border: 2px solid transparent;
+}
+/* line 781, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title-active .marker-icon-wrap img {
+  -webkit-filter: none;
+  filter: none;
+}
+/* line 785, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title-active .marker-icon-wrap:before {
+  border-top-color: #966e3b;
+  border-right-color: #966e3b;
+  border-bottom-color: #966e3b;
+  -webkit-transition: border-top-color 0.05s linear, border-right-color 0.05s linear 0.05s, border-bottom-color 0.05s linear 0.1s;
+  transition: border-top-color 0.05s linear, border-right-color 0.05s linear 0.05s, border-bottom-color 0.05s linear 0.1s;
+}
+/* line 792, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title-active .marker-icon-wrap:after {
+  border-top: 2px solid #966e3b;
+  border-left-width: 2px;
+  border-right-width: 2px;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -webkit-transition: -webkit-transform 0.2s linear 0s, border-left-width 0s linear 0.15s;
+  transition: -webkit-transform 0.2s linear 0s, border-left-width 0s linear 0.15s;
+}
+/* line 804, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title-active:hover .marker-name {
+  color: #966e3b;
+  font-weight: normal;
+}
+/* line 810, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title-active:hover .marker-icon-wrap:before {
+  border-top-color: #966e3b;
+  border-right-color: #966e3b;
+  border-bottom-color: #966e3b;
+  -webkit-transition: border-top-color 0.05s linear, border-right-color 0.05s linear 0.05s, border-bottom-color 0.05s linear 0.1s;
+  transition: border-top-color 0.05s linear, border-right-color 0.05s linear 0.05s, border-bottom-color 0.05s linear 0.1s;
+}
+/* line 817, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title-active:hover .marker-icon-wrap:after {
+  border-top: 2px solid #966e3b;
+  border-left-width: 2px;
+  border-right-width: 2px;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -webkit-transition: -webkit-transform 0.2s linear 0s, border-left-width 0s linear 0.15s;
+  transition: -webkit-transform 0.2s linear 0s, border-left-width 0s linear 0.15s;
+}
+/* line 828, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-title-active:hover .nav-btn-name {
+  font-size: 15px;
+}
+/* line 833, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .center-focus {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+/* line 844, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-img {
+  display: block;
+}
+/* line 846, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-img img {
+  position: absolute;
+  top: -20px;
+  left: -15px;
+  border-radius: 50px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  max-width: 40px;
+  transform: transition(all, 0.3s ease-in-out);
+  transform: scale3d(0, 0, 0);
+}
+/* line 859, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .marker-del {
+  display: none;
+  position: absolute;
+  background: rgba(230, 230, 230, 0.5);
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  border-radius: 50deg;
+  transform: transition(all 1s ease-in-out);
+  transform: scale3d(0, 0, 0);
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 874, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .marker .icon-del-ani {
+  display: block;
+  text-align: center;
+  /* top: -18px;
+  left: -16px; */
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: -15px;
+  background: rgba(230, 230, 230, 0.8);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  transform: transition(all 1s ease-in-out);
+  transform: scale3d(1, 1, 1);
+  line-height: 45px;
+}
+/* line 895, ../sass/edit.scss */
+.eidtor-wrapper .amap-wrap .amap-marker-content .assert-draggable.marker img {
+  width: 30px;
+  max-height: 30px;
+}
+/* line 902, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap {
+  position: relative;
+  z-index: 3;
+  /* 左侧的文件树样式 */
+}
+/* line 906, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head {
+  height: 82px;
+  box-sizing: border-box;
+  background-color: #ececec;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 650;
+}
+/* line 914, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .scene-name {
+  display: block;
+  width: 287px;
+  font-size: 30px;
+  text-align: left;
+  float: left;
+  height: 82px;
+  line-height: 82px;
+  background-color: #ececec;
+  padding: 0 15px;
+  border-bottom: 1px solid #d0d0d0;
+  border-right: 1px solid #d0d0d0;
+}
+/* line 926, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .scene-name .btn-scene {
+  height: 100%;
+  width: 90%;
+  border: none;
+  text-align: left;
+  padding: 0;
+  color: #000;
+  display: inline-block;
+  line-height: 82px;
+  background-color: #ececec;
+  font-size: 15px;
+}
+/* line 938, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .scene-name .drop-scene {
+  height: 100%;
+  padding: 0;
+  border: none;
+  background-color: #ececec;
+  position: absolute;
+  right: 18px;
+}
+/* line 945, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .scene-name .drop-scene .caret {
+  border-top: 6px solid;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+/* line 951, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .scene-name .scene-menu {
+  width: 288px;
+  box-sizing: border-box;
+}
+/* line 956, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .nav-bar {
+  border-bottom: 1px solid #dcdcdc;
+  background-color: #FFF;
+  font-size: 18px;
+  margin-bottom: 0;
+  height: 82px;
+  background-color: #ececec;
+  line-height: 82px;
+  width: 480px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+/* line 969, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .nav-bar .has-border:after {
+  padding-right: 2px;
+  background-color: #d0d0d0;
+  position: absolute;
+  top: 15px;
+  height: 20px;
+  content: "";
+  display: block;
+}
+/* line 980, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .nav-bar li {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  height: 100%;
+}
+/* line 986, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .nav-bar li a {
+  display: block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 6px 10px;
+  cursor: pointer;
+}
+/* line 994, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .nav-bar li a img {
+  vertical-align: middle;
+  margin-top: -3px;
+}
+/* line 998, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .nav-bar li a span {
+  display: block;
+}
+/* line 1001, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .nav-bar li a .nav-btn-name {
+  font-size: 15px;
+}
+/* line 1007, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .nav-bar li #undoBtn .nav-img-off, .eidtor-wrapper .edit-wrap .edit-head .nav-bar li #redoBtn .nav-img-off {
+  display: inline-block;
+}
+/* line 1010, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .nav-bar li #undoBtn .nav-img-active, .eidtor-wrapper .edit-wrap .edit-head .nav-bar li #redoBtn .nav-img-active {
+  display: none;
+}
+/* line 1013, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .nav-bar li #undoBtn .nav-btn-name, .eidtor-wrapper .edit-wrap .edit-head .nav-bar li #redoBtn .nav-btn-name {
+  font-size: 15px;
+}
+/* line 1018, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .nav-bar li .right-border {
+  border-right: 1px solid #555;
+}
+/* line 1024, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .nav-bar li.active a {
+  background: url("../../../../static/img/tool-btn-bg.png");
+  background-repeat: no-repeat;
+}
+/* line 1028, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .nav-bar li.active #undoBtn, .eidtor-wrapper .edit-wrap .edit-head .nav-bar li.active #redoBtn {
+  background: none;
+}
+/* line 1030, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .nav-bar li.active #undoBtn .nav-img-off, .eidtor-wrapper .edit-wrap .edit-head .nav-bar li.active #redoBtn .nav-img-off {
+  display: none;
+}
+/* line 1033, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .nav-bar li.active #undoBtn .nav-img-active, .eidtor-wrapper .edit-wrap .edit-head .nav-bar li.active #redoBtn .nav-img-active {
+  display: inline-block;
+}
+/* line 1040, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .nav-bar .nav-item-active a {
+  background: url("../../../../static/img/tool-btn-bg.png");
+  background-repeat: no-repeat;
+}
+/* line 1043, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .nav-bar .nav-item-active a .nav-btn-name {
+  color: #00B7EE;
+  font-size: 15px;
+}
+/* line 1050, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .nav-bar .oper-item-active a {
+  background: url("../../../../static/img/tool-btn-bg.png");
+  background-repeat: no-repeat;
+}
+/* line 1056, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .nav-bar .paste-item-active a {
+  background: url("../../../../static/img/tool-btn-bg.png");
+  background-repeat: no-repeat;
+  /* background-color: #c6c6c6;
+  border: 1px solid #b2b2b2;
+  border-radius: 3px; */
+}
+/* line 1065, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .nav-bar .model-oper-active a {
+  background: url("../../../../static/img/tool-btn-bg.png");
+  background-repeat: no-repeat;
+  /* background-color: #c6c6c6;
+  border: 1px solid #b2b2b2;
+  border-radius: 3px; */
+}
+/* line 1075, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .nav-bar .disabled-item a span {
+  color: #ccc;
+}
+/* line 1080, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .nav-bar .model-action {
+  display: none;
+}
+/* line 1085, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .nav-bar .transform-action .tabaddul .addli:hover {
+  background: #f3f3f3 !important;
+}
+/* line 1091, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .scene-3d {
+  width: 720px;
+  max-width: 720px;
+}
+/* line 1095, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .model-3d {
+  width: 660px;
+  max-width: 660px;
+}
+/* line 1099, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-head .pano-view {
+  width: 600px;
+  max-width: 600px;
+}
+/* line 1104, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap {
+  transform: transition(all 0.2 ease-in-out);
+  background: #ececec;
+  float: right;
+  height: 100%;
+  max-height: 100%;
+  width: 280px;
+  position: relative;
+  border-left: 1px solid #d0d0d0;
+  box-sizing: border-box;
+  z-index: 3500;
+}
+/* line 1115, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .props-header {
+  height: 82px;
+  line-height: 82px;
+  background-color: #ececec;
+  width: 100%;
+  padding: 0 15px;
+  border-bottom: 1px solid #d0d0d0;
+}
+/* line 1122, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .props-header .switch-btn-wrapper {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+}
+/* line 1127, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .props-header .title {
+  margin-left: 5px;
+  font-size: 16px;
+}
+/* line 1132, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .nail-img {
+  position: absolute;
+  right: -8px;
+  top: -25px;
+  z-index: 200;
+  cursor: pointer;
+  width: 30px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+}
+/* line 1143, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .nail-img img {
+  cursor: pointer;
+}
+/* line 1147, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .nail-berth {
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+  background-color: #FFF;
+  text-align: center;
+  width: 20px;
+  height: 70px;
+  line-height: 70px;
+  background-color: #ccc;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+/* line 1160, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .nail-berth img {
+  cursor: pointer;
+}
+/* line 1164, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-bottom: 100px;
+}
+/* line 1171, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container {
+  border-bottom: 1px solid #dcdcdc;
+  background: #ececec;
+  position: relative;
+}
+/* line 1175, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .menu {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+/* line 1179, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .menu img {
+  transform: transition(all 0.2s ease-in);
+  cursor: pointer;
+  position: absolute;
+  left: -40px;
+  width: 18px;
+}
+/* line 1188, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-title {
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  font-size: 15px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #d0d0d0;
+}
+/* line 1196, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list {
+  padding: 0 10px;
+  padding-top: 0;
+  text-align: left;
+}
+/* line 1202, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list .dropdown-menu li a {
+  text-align: center;
+}
+/* line 1208, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list .obj-id .props-name {
+  width: 70px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 1217, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list .obj-id .id-value {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 1222, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list li {
+  margin: 7px 0;
+}
+/* line 1224, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list li .props-name {
+  width: 50px;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #555;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 1234, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list li .input-group .form-control {
+  vertical-align: middle;
+  border-radius: 4px;
+  height: 25px;
+  padding: 2px 5px;
+  width: 180px;
+}
+/* line 1242, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list li .input-group .btn-group .btn-area {
+  width: 155px;
+  height: 33px;
+  background-color: #FFF;
+}
+/* line 1250, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list li .logo .props-name {
+  vertical-align: top;
+}
+/* line 1253, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list li .logo .img-scan {
+  display: table-cell;
+  width: 100px;
+  height: 70px;
+}
+/* line 1257, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list li .logo .img-scan img {
+  max-width: 100%;
+  border-radius: 4px;
+  max-height: 60px;
+}
+/* line 1264, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list li .obj-desc {
+  display: none;
+  position: relative;
+  border-collapse: separate;
+}
+/* line 1269, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list li .obj-desc .props-name {
+  vertical-align: top;
+}
+/* line 1274, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list li:first-child {
+  margin-top: 0;
+}
+/* line 1279, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list li .props-con-wrapper {
+  display: table;
+}
+/* line 1282, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list li .props-con-wrapper .props-con span {
+  margin: 0 3px;
+}
+/* line 1285, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list li .props-con-wrapper .props-con .form-control {
+  width: 50px;
+  display: inline-block;
+  padding: 6px 8px;
+}
+/* line 1292, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list li .props-lnglat-wrapper {
+  display: table;
+}
+/* line 1294, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list li .props-lnglat-wrapper .props-lnglat {
+  margin-top: 2px;
+}
+/* line 1296, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list li .props-lnglat-wrapper .props-lnglat span {
+  margin: 0 3px;
+}
+/* line 1299, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list li .props-lnglat-wrapper .props-lnglat .form-control {
+  height: 25px;
+  width: 140px;
+  display: inline-block;
+  padding: 2px 5px;
+}
+/* line 1308, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list li:first-child {
+  margin-top: 10px;
+}
+/* line 1313, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list[data-prop-list-type="marker"] .img-type-prop {
+  display: none;
+}
+/* line 1318, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list[data-prop-list-type="model"] .img-type-prop {
+  display: none;
+}
+/* line 1323, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list[data-prop-list-type="moxingModel"] .img-type-prop {
+  display: none;
+}
+/* line 1328, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list[data-prop-list-type="baikeModel"] .img-type-prop {
+  display: none;
+}
+/* line 1331, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list[data-prop-list-type="baikeModel"] .source-id-item {
+  display: none;
+}
+/* line 1336, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list[data-prop-list-type="videoModel"] .img-type-prop {
+  display: none;
+}
+/* line 1339, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list[data-prop-list-type="videoModel"] .source-id-item {
+  display: none;
+}
+/* line 1349, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list[data-prop-list-type="markerAssert"] .img-type-prop {
+  display: none !important;
+}
+/* line 1354, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list[data-prop-list-type="modelAssert"] .img-type-prop {
+  display: none !important;
+}
+/* line 1357, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list[data-prop-list-type="modelAssert"] .dropdown-select {
+  display: none !important;
+}
+/* line 1360, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list[data-prop-list-type="modelAssert"] .source-id-item {
+  display: none !important;
+}
+/* line 1366, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .props-list[data-prop-list-type="map"] .img-type-prop .btn-danger.clear-image {
+  display: block !important;
+}
+/* line 1373, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .moreProps li .props-lnglat-wrapper {
+  display: table;
+}
+/* line 1375, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .moreProps li .props-lnglat-wrapper .props-lnglat {
+  margin-top: 2px;
+}
+/* line 1377, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .moreProps li .props-lnglat-wrapper .props-lnglat span {
+  margin: 0 3px;
+}
+/* line 1380, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .moreProps li .props-lnglat-wrapper .props-lnglat .form-control {
+  width: 140px;
+  display: inline-block;
+  padding: 6px 8px;
+}
+/* line 1387, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .moreProps li .props-con-wrapper {
+  display: table;
+}
+/* line 1390, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .moreProps li .props-con-wrapper .props-con span {
+  margin: 0 3px;
+}
+/* line 1393, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .moreProps li .props-con-wrapper .props-con .form-control {
+  width: 50px;
+  display: inline-block;
+  padding: 6px 2px;
+}
+/* line 1401, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container .moreProps li:first-child {
+  margin-top: 10px;
+}
+/* line 1406, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .props-container:last-child {
+  border-bottom: none;
+}
+/* line 1409, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .add-props {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  border-bottom: 1px solid #dcdcdc;
+  text-align: center;
+}
+/* line 1416, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .props-wrap .list-wrap .add-props img {
+  vertical-align: middle;
+  cursor: pointer;
+}
+/* line 1424, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .lock-wrap {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: middle;
+  border-radius: 20px;
+  background-color: #00B7EE;
+  text-align: center;
+  margin-left: 10px;
+  display: block;
+}
+/* line 1437, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .lock-wrap img {
+  width: 12px;
+  /* bottom: 0;
+  left: -20px; */
+  cursor: pointer;
+}
+/* line 1447, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .scenicBox {
+  width: 288px;
+  float: left;
+  z-index: 500;
+  overflow: auto;
+  background-color: #ececec;
+  transition: height .2s ease;
+  position: relative;
+  border-right: 1px solid #d0d0d0;
+}
+/* line 1456, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .scenicBox .scene-header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  padding: 0 15px 5px 15px;
+  border-bottom: 1px solid #d0d0d0;
+}
+/* line 1463, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .scenicBox .scene-header .title {
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  position: relative;
+}
+/* line 1468, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .scenicBox .scene-header .title .switch-btn-wrapper {
+  position: absolute;
+  right: -5px;
+  top: 12px;
+}
+/* line 1474, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .scenicBox .scene-header .searchBox {
+  cursor: pointer;
+  height: 30px;
+  position: relative;
+}
+/* line 1478, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .scenicBox .scene-header .searchBox input {
+  width: 200px;
+  height: 24px;
+  border-radius: 24px;
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 5px 2px 25px;
+}
+/* line 1486, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .scenicBox .scene-header .searchBox .search-btn {
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 24px;
+  color: #fff;
+  background-color: #00B7EE;
+  text-align: center;
+  font-size: 12px;
+  position: absolute;
+  right: 45px;
+}
+/* line 1499, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .scenicBox .scene-header .searchBox img {
+  cursor: pointer;
+  vertical-align: middle;
+}
+/* line 1503, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .scenicBox .scene-header .searchBox .search {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  margin-top: -6px;
+}
+/* line 1509, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .scenicBox .scene-header .searchBox #addBaseScene {
+  position: absolute;
+  right: 0;
+}
+/* line 1516, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .scenicBox .scenicFolder .folderBox {
+  width: 270px;
+  overflow: auto;
+  margin: 10px auto;
+  padding-bottom: 50px;
+}
+/* line 1521, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .scenicBox .scenicFolder .folderBox #files {
+  margin-top: -10px;
+}
+/* line 1526, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .scenicBox .scenicFolder .folderBox .loc:hover .add-loc-ing {
+  display: block !important;
+}
+/* line 1529, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .scenicBox .scenicFolder .folderBox .loc:hover .edit-ing {
+  display: block !important;
+}
+/* line 1532, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .scenicBox .scenicFolder .folderBox .loc:hover .delte-loc-ing {
+  display: block !important;
+}
+/* line 1540, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .scenicBox .scenicFolder .folderBox .event-item:hover .deletebtn {
+  display: block;
+}
+/* line 1549, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .scenicBox .scenicFolder .folderBox .tree .first-layer .second-layer .second-layer-item.location .loc {
+  background: url("../../../../static/img/loc.png") no-repeat;
+}
+/* line 1554, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .scenicBox .scenicFolder .folderBox .tree .first-layer .second-layer .area .range {
+  background: url("../../../../static/img/area.png") no-repeat;
+}
+/* line 1558, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .scenicBox .scenicFolder .folderBox .tree .first-layer .second-layer .model {
+  background: url("../../../../static/img/mol.png") no-repeat;
+}
+/* line 1561, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .scenicBox .scenicFolder .folderBox .tree .first-layer .second-layer .identify {
+  background: url("../../../../static/img/mol.png") no-repeat;
+}
+/* line 1570, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom {
+  z-index: 3000;
+}
+/* line 1574, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .resourceBox .title .asserts-model-btn-wrapper {
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: #f5f5f5;
+  border: 1px solid #d0d0d0;
+  margin-top: 8px;
+  line-height: 30px;
+  text-align: center;
+}
+/* line 1586, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .resourceBox .title .asserts-model-btn-wrapper img {
+  margin-top: -3px;
+}
+/* line 1591, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .resourceBox .title .asserts-list-modal-off .list-off {
+  display: inline;
+}
+/* line 1594, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .resourceBox .title .asserts-list-modal-off .list-on {
+  display: none;
+}
+/* line 1598, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .resourceBox .title .asserts-list-modal-active {
+  background-color: #00B7EE;
+}
+/* line 1600, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .resourceBox .title .asserts-list-modal-active .list-on {
+  display: inline;
+}
+/* line 1603, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .resourceBox .title .asserts-list-modal-active .list-off {
+  display: none;
+}
+/* line 1607, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .resourceBox .title .asserts-scan-mode {
+  margin-right: 10px;
+}
+/* line 1611, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .resourceBox .title .asserts-scan-mode-off .scan-off {
+  display: inline;
+}
+/* line 1614, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .resourceBox .title .asserts-scan-mode-off .scan-on {
+  display: none;
+}
+/* line 1618, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .resourceBox .title .asserts-scan-mode-active {
+  background-color: #00B7EE;
+}
+/* line 1620, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .resourceBox .title .asserts-scan-mode-active .scan-on {
+  display: inline;
+}
+/* line 1623, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .resourceBox .title .asserts-scan-mode-active .scan-off {
+  display: none;
+}
+/* line 1629, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper {
+  background-color: #eee;
+}
+/* line 1632, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .folder-path {
+  height: 20px;
+  line-height: 20px;
+  background-color: #dddddd;
+}
+/* line 1638, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .folder-path a:before {
+  display: none !important;
+}
+/* line 1641, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .folder-path a:after {
+  display: inline-block !important;
+  content: "" !important;
+}
+/* line 1647, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .assert-resources {
+  height: 100%;
+}
+/* line 1649, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .assert-resources .detail-tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100% !important;
+  overflow: scroll;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+/* line 1661, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .assert-resources .layer {
+  width: 100%;
+  display: flex;
+}
+/* line 1665, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .assert-resources .layer li {
+  max-height: 50px;
+  max-width: 100px;
+  cursor: pointer;
+  margin: 10px;
+}
+/* line 1670, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .assert-resources .layer li a {
+  display: block;
+  max-height: 50px;
+  margin: 5px;
+  text-align: center;
+}
+/* line 1676, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .assert-resources .layer li a .fa.fa-folder-o:before {
+  font-size: 25px;
+}
+/* line 1680, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .assert-resources .layer li a .txt {
+  display: block;
+}
+/* line 1685, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .assert-resources .layer .detail-tags-wrapper {
+  display: none;
+}
+/* line 1690, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .assert-resources-icon-mode {
+  /* 普通的大图标模式 */
+}
+/* line 1691, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .assert-resources-icon-mode .detail-tag {
+  display: table-cell;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+/* line 1696, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .assert-resources-icon-mode .detail-tag a {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 7px;
+}
+/* line 1704, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .assert-resources-icon-mode .detail-tag a img {
+  width: 40px;
+  max-height: 40px;
+  min-height: 40px;
+}
+/* line 1709, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .assert-resources-icon-mode .detail-tag a span.txt {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 1714, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .assert-resources-icon-mode .detail-tag a span.txt:hover {
+  text-overflow: inherit;
+  overflow: visible;
+}
+/* line 1722, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .assert-resources-list-mode {
+  /* 列表模式显示的资源 */
+  display: none;
+}
+/* line 1724, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .assert-resources-list-mode .detail-tag {
+  display: table-cell;
+  width: 50%;
+  height: 40px;
+  cursor: pointer;
+  border-right: 1px solid #eee;
+}
+/* line 1731, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .assert-resources-list-mode .detail-tag a {
+  width: 100%;
+  height: 30px;
+  margin: 5px;
+  display: block;
+  text-align: left;
+  vertical-align: middle;
+  padding-top: 7px;
+  box-sizing: border-box;
+}
+/* line 1740, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .assert-resources-list-mode .detail-tag a img {
+  width: 20px;
+  max-height: 20px;
+}
+/* line 1744, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .assert-resources-list-mode .detail-tag a span.txt {
+  margin-left: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 1749, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .assert-resources-list-mode .detail-tag a span.txt:hover {
+  text-overflow: inherit;
+  overflow: visible;
+}
+/* line 1756, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .assert-resources-list-mode .assert-draggable-active {
+  border: none;
+  background-color: #fff;
+}
+/* line 1759, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom .asserts-left-wrapper .assert-resources-list-mode .assert-draggable-active .txt {
+  color: #00B7EE;
+}
+/* line 1766, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view.origin-height {
+  min-height: 200px !important;
+}
+/* line 1768, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view.origin-height .resourceBox {
+  min-height: 200px !important;
+}
+/* line 1772, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view {
+  z-index: 3000;
+  position: fixed;
+}
+/* line 1775, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox {
+  width: 100%;
+  min-width: 1000px;
+  height: 200px;
+  box-sizing: border-box;
+  padding-right: 280px;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  background-color: #ececec;
+}
+/* line 1786, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox .search-wrapepr {
+  width: 100%;
+  height: 46px;
+  background-color: #ececec;
+  border: 1px solid #d0d0d0;
+  border-left: none;
+  border-right: none;
+  padding: 0 15px;
+}
+/* line 1794, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox .search-wrapepr .title {
+  display: inline-block;
+  height: 46px;
+  font-size: 16px;
+  line-height: 46px;
+  width: 255px;
+}
+/* line 1802, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach {
+  float: right;
+  position: relative;
+  height: 100%;
+}
+/* line 1806, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .search-wrap {
+  display: inline-block;
+  margin-right: 10px;
+  height: 100%;
+  position: relative;
+}
+/* line 1811, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .search-wrap .form-control {
+  width: 200px;
+  height: 24px;
+  border-radius: 24px;
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 5px 2px 25px;
+  margin: 10px 0;
+}
+/* line 1820, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .search-wrap .search {
+  position: absolute;
+  top: 15px;
+  left: 8px;
+}
+/* line 1825, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .search-wrap .search-btn {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 50px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 24px;
+  color: #fff;
+  background-color: #00B7EE;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+/* line 1841, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .assert-btn-wrap {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  line-height: 40px;
+}
+/* line 1846, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .assert-btn-wrap .form-control {
+  height: 25px;
+  line-height: 15px;
+  padding: 2px;
+  border-radius: 20px;
+  width: 150px;
+  display: none;
+  text-indent: 12px;
+}
+/* line 1855, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .assert-btn-wrap #addAssertTag {
+  margin-right: 10px;
+}
+/* line 1858, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .assert-btn-wrap .tag-name-oper-btn {
+  display: none;
+  position: absolute;
+  top: 8px;
+}
+/* line 1863, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .assert-btn-wrap #submitAssertTag {
+  left: 120px;
+}
+/* line 1866, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .assert-btn-wrap #cancelAssertTag {
+  left: 100px;
+}
+/* line 1869, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .assert-btn-wrap .switch-btn-wrapper {
+  position: relative;
+  top: 7px;
+}
+/* line 1876, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .show-assert-btn-wrap .tag-name-oper-btn {
+  display: inline;
+  margin: 5px;
+}
+/* line 1880, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .show-assert-btn-wrap .form-control {
+  display: inline-block;
+}
+/* line 1886, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox .search-wrapepr .add-assert-tag {
+  float: right;
+  cursor: pointer;
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  background: url("../../../../static/img/add-folder.png") no-repeat 100%;
+}
+/* line 1894, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox .search-wrapepr .add-folder-input-wrapper {
+  float: right;
+  position: relative;
+}
+/* line 1897, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox .search-wrapepr .add-folder-input-wrapper .form-control {
+  transform: transition(all 0.3s ease);
+  width: 0px;
+  height: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* line 1909, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox .search-wrapepr .add-folder-input-wrapper .form-control.show-input {
+  width: 120px;
+  margin: 5px 0;
+  padding: 2px 5px;
+  text-indent: 4px;
+}
+/* line 1915, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox .search-wrapepr .add-folder-input-wrapper .save-cur-tag {
+  position: absolute;
+  right: 6px;
+  top: 9px;
+  width: 15px;
+  display: none;
+}
+/* line 1924, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox #asserts {
+  padding-left: 5px;
+  width: 280px;
+  height: 100%;
+  float: left;
+  border-right: 1px solid #d0d0d0;
+  box-sizing: border-box;
+  overflow: scroll;
+  padding-bottom: 50px;
+}
+/* line 1935, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox #asserts .detail-tags-wrapper {
+  display: none;
+}
+/* line 1938, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox #asserts .asserts-active {
+  background-color: #cdcdcd;
+  color: #095b79;
+}
+/* line 1944, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .resourceBox #asserts a.assert-folder:hover .deletebtn {
+  display: block;
+  z-index: 3000;
+}
+/* line 1954, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.horizational-view .asserts-left-wrapper {
+  margin-left: 300px;
+  height: 100%;
+}
+/* line 1960, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.vertical-view {
+  float: right;
+  position: relative;
+  z-index: 700;
+  height: 100%;
+  background-color: #eee;
+  width: 280px;
+  margin-top: 82px;
+}
+/* line 1968, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.vertical-view .resourceBox {
+  height: 100% !important;
+}
+/* line 1971, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.vertical-view .asserts-left-wrapper {
+  height: 50%;
+}
+/* line 1974, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.vertical-view .asserts-left-wrapper .assert-resources .detail-tags-wrapper {
+  overflow-y: scroll;
+}
+/* line 1979, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.vertical-view .search-wrapepr {
+  width: 100%;
+}
+/* line 1981, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.vertical-view .search-wrapepr .assert-serach {
+  display: none;
+}
+/* line 1984, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.vertical-view .search-wrapepr .title {
+  height: 46px;
+  font-size: 16px;
+  line-height: 46px;
+  border-bottom: 1px solid #d0d0d0;
+  padding: 0 10px;
+}
+/* line 1994, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.vertical-view #asserts {
+  border-bottom: 1px solid #d0d0d0;
+  padding-left: 20px;
+  height: 45%;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  padding-bottom: 20px;
+}
+/* line 2003, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.vertical-view #asserts .detail-tags-wrapper {
+  display: none;
+}
+/* line 2006, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .edit-bottom.vertical-view #asserts .asserts-active {
+  background-color: #cdcdcd;
+  color: #095b79;
+}
+/* line 2015, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .sceneul {
+  position: fixed;
+  top: 85px;
+  right: 280px;
+  height: 30px;
+}
+/* line 2020, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .sceneul .DD, .eidtor-wrapper .edit-wrap .sceneul .model-DD {
+  cursor: pointer;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: #fff;
+  margin: 0 3px;
+  border-radius: 30px;
+}
+/* line 2031, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .sceneul .DD:hover {
+  background: #00B7EE;
+  color: #fff;
+}
+/* line 2035, ../sass/edit.scss */
+.eidtor-wrapper .edit-wrap .sceneul .active {
+  background: #00B7EE;
+  color: #fff;
+}
+/* line 2042, ../sass/edit.scss */
+.eidtor-wrapper #threesection {
+  visibility: hidden;
+  /* .threescenic:hover{
+  	.threescenicname{
+  		//color: #d4237a!important;
+  		cursor: default;
+  	}
+  	.threescenicimg{
+  	
+  		border:solid 2px #d4237a;
+  		cursor: pointer;
+  	}
+  } */
+}
+/* line 2044, ../sass/edit.scss */
+.eidtor-wrapper #threesection .transform-action {
+  display: none;
+}
+/* line 2059, ../sass/edit.scss */
+.eidtor-wrapper #threesection .threescenic .threescenicname {
+  cursor: default;
+}
+/* line 2063, ../sass/edit.scss */
+.eidtor-wrapper #threesection .threescenic .threescenicimg:hover {
+  border: solid 2px #d4237a;
+  cursor: pointer;
+}
+/* line 2070, ../sass/edit.scss */
+.eidtor-wrapper #threesection .threescenic.active .threescenicname {
+  color: #d4237a !important;
+  cursor: default;
+}
+/* line 2074, ../sass/edit.scss */
+.eidtor-wrapper #threesection .threescenic.active .threescenicimg {
+  border: solid 2px #d4237a;
+  cursor: pointer;
+}
+/* line 2083, ../sass/edit.scss */
+.eidtor-wrapper .add-assert-modal .input-group {
+  margin: 20px 0;
+}
+/* line 2085, ../sass/edit.scss */
+.eidtor-wrapper .add-assert-modal .input-group .input-group-addon.btn-success {
+  background-color: #5cb85c !important;
+  color: #fff !important;
+  cursor: pointer !important;
+}
+/* line 2091, ../sass/edit.scss */
+.eidtor-wrapper .add-assert-modal .assert-type-props-wrapper {
+  display: none;
+}

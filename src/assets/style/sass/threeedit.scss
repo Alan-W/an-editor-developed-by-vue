@@ -1,0 +1,63 @@
+.three-mode {
+    position: fixed;
+    top: 82px;
+    right: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    color: #000;
+    background: #ddbcbc;
+    .textul {
+        position: absolute;
+        top: 90px;
+        left: 300px;
+        z-index: 300;
+    }
+    #threesection {
+        .transform-action {
+            display: none;
+        }
+        .threescenic:hover {
+            .threescenicname {
+                //color: #d4237a!important;
+                cursor: default;
+            }
+            .threescenicimg {
+                cursor: pointer;
+
+                border: solid 2px #d4237a;
+            }
+        }
+        .threescenic {
+            .threescenicname {
+                //color: #d4237a!important;
+                cursor: default;
+            }
+            .threescenicimg:hover {
+                cursor: pointer;
+
+                border: solid 2px #d4237a;
+            }
+        }
+        .threescenic.active {
+            .threescenicname {
+                cursor: default;
+
+                color: #d4237a!important;
+            }
+            .threescenicimg {
+                cursor: pointer;
+
+                border: solid 2px #d4237a;
+            }
+        }
+    }
+    .attr {
+        position: relative;
+        z-index: 200;
+
+        float: right;
+    }
+}

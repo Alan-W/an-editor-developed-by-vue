@@ -1,0 +1,193 @@
+.metisFolder {
+    padding-left: 0;
+}
+.metisFolder,
+.metisFolder ul {
+    list-style: none;
+}
+
+.metisFolder li {
+    position: relative;
+}
+.metisFolder li a {
+    display: block;
+    position: relative;
+    padding: 2px 0;
+    color: #333;
+    text-decoration: none;
+    outline: 0 none;
+    cursor: pointer;
+    border-radius: 5px;
+    white-space:nowrap; 
+    overflow:hidden;
+    text-overflow:ellipsis; 
+    margin: 10px 0;
+}
+/* .metisFolder li a.model:before {
+   position: absolute;
+    border-top: 1px dotted #000;
+    content: "";
+    width: 10px;
+    top: 13px;
+    left: 0;
+} */
+.metisFolder li a .txt {
+    font-size: 12px;
+}
+.metisFolder li a:hover {
+    background-color: #f8f3f3;
+    text-overflow:inherit;
+    overflow:visible;
+   
+}
+.metisFolder li a .txt:hover{
+    color: #0c7fa9;
+    text-overflow:inherit;
+    overflow:visible;
+}
+
+.metisFolder ul:before {
+    position: absolute;
+    border-left: 1px dotted #000;
+    content: "";
+    width: 20px;
+    top: 20px;
+    left: 5px;
+    bottom: 10px;
+}
+
+
+.metisFolder ul > li:before {
+    position: absolute;
+    border-top: 1px dotted #000;
+    content: "";
+    width: 15px;
+    top: 13px;
+    left: -15px;
+}
+
+
+li.active > a.loc > span.fa-plus-square:before {
+    content: "\f147"!important/* "\f115" !important */;
+    font-size: 15px;
+    color: #000!important;
+}
+li > a.loc > span.fa-folder-o:before {
+    content: "\f196"!important;
+    font-size: 15px;
+    color: #000!important;
+}
+.collapse.in {
+    padding-left: 20px;
+}
+.model .fa:before{
+    display: inline-block;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: url(../../img/edit/mol.png) no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.role .fa:before{
+    display: inline-block;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: url(../../img/edit/mol.png) no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.marker .fa:after{
+    display: inline-block;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: url(../../img/edit/marker.png) no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.identify .fa:after{
+    display: inline-block;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: url(../../img/edit/marker.png) no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.model.baike-role .fa:before{
+    display: inline-block;
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: url(../../img/edit/info.png) no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.role.baike-role .fa:before{
+    display: inline-block;
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: url(../../img/edit/info.png) no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.model.video-role .fa:before{
+    display: inline-block;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: url(../../img/edit/video.png) no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.role.video-role .fa:before{
+    display: inline-block;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: url(../../img/edit/video.png) no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+li.active > a.loc .fa:after{
+    display: inline-block;
+    content: '';
+    width: 19px;
+    height: 19px;
+    background: url(../../img/edit/loc-open.png) no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.loc .fa:after{
+    display: inline-block;
+    content: '';
+    width: 15px;
+    height: 18px;
+    background: url(../../img/edit/loc.png) no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.range .txt {
+    color: #13227a;
+}
+.fa.fa-plus-square:before{
+    content:"\f0fe"!important;
+    margin-right: 12px;
+    font-size: 15px;
+    color:#000!important;
+}
+.fa.fa-file:before {
+    display: inline-block;
+    content: ''!important;
+    width: 15px;
+    height: 15px;
+    background: url(../../img/edit/loc.png) no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+ul li.active>a>.fa.fa-plus-square:before {
+    content: "\f147"!important;
+}

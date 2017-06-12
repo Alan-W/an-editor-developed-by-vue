@@ -1,0 +1,238 @@
+.amap-wrap {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	.amap-marker-content {
+		.marker {
+			width: 22px;
+			height: 22px;
+			text-align: center;
+			position: absolute;
+			color: #333;
+			cursor: pointer;
+			.marker-title {
+				position: absolute;
+				font-size: 12px;
+				left: 0;
+				right: 0;
+				margin: auto;
+				text-align: center;
+				.marker-name {
+					display: block;
+					position: absolute;
+					width: 80px;
+					left: -29px;
+					font-size: 8px;
+					line-height: 12px;
+					cursor: pointer;
+					display: block;
+					text-shadow: 1px 1px 2px #fff;
+				}
+				.marker-icon-wrap {
+					width: 22px;
+					height: 22px;
+					display: block;
+					border-radius: 50deg;
+					transform: transition(all .2s ease-in-out);
+					text-align: center;
+					vertical-align: middle;
+					img {
+						-webkit-filter: grayscale(0.8);
+						filter: grayscale(0.8);
+					}
+					&:before,&:after {
+						top: 0;
+							left: 0;
+					}
+					&:before {
+						border: 1px solid transparent;
+					}
+					&:after {
+						border: 0 solid transparent;
+					}
+					.marker-icon {
+						width: 20px;
+						height: 20px;
+						margin-top: 1px;
+					}
+					.nav-btn-name {
+						font-size: 15px;
+					}
+				}
+				// 鼠标放到marker 上面的样式修改
+				&:hover {
+					.marker-name {
+						color: #33aee2;
+						text-shadow: 1px 1px 2px #fff;
+					}
+					.marker-icon-wrap {
+						img {
+							-webkit-filter: none;
+							filter: none;
+						}
+						&:before {
+							border-top-color: #33aee2;
+							border-right-color: #33aee2;
+							border-bottom-color: #33aee2;
+							-webkit-transition: border-top-color 0.05s linear, border-right-color 0.05s linear 0.05s, border-bottom-color 0.05s linear 0.1s;
+							transition: border-top-color 0.05s linear, border-right-color 0.05s linear 0.05s, border-bottom-color 0.05s linear 0.1s;
+						}
+						&:after {
+							border-top: 1px solid #33aee2;
+							border-left-width: 1px;
+							border-right-width: 1px;
+							-webkit-transform: rotate(270deg);
+							-ms-transform: rotate(270deg);
+							transform: rotate(270deg);
+							-webkit-transition: -webkit-transform 0.2s linear 0s, border-left-width 0s linear 0.15s;
+							transition: -webkit-transform 0.2s linear 0s, border-left-width 0s linear 0.15s;
+						}
+					}
+					.nav-btn-name {
+						font-size: 15px;
+					}
+				}
+			}
+			// 地图中的marker 获得焦点的样式
+			.marker-title-active {
+				position: absolute;
+				font-size: 12px;
+				text-align: center;
+				.marker-name {
+					text-shadow: none;
+					color: #966e3b;
+				}
+				
+				.marker-icon-wrap {
+					.marker-icon {
+						width: 18px;
+						height: 18px;
+						margin-top: 2px;
+					}
+					
+					&:before {
+						border: 2px solid transparent;
+					}
+					img {
+						-webkit-filter: none;
+						filter: none;
+					}
+					&:before {
+						border-top-color: #966e3b;
+						border-right-color: #966e3b;
+						border-bottom-color: #966e3b;
+						-webkit-transition: border-top-color 0.05s linear, border-right-color 0.05s linear 0.05s, border-bottom-color 0.05s linear 0.1s;
+						transition: border-top-color 0.05s linear, border-right-color 0.05s linear 0.05s, border-bottom-color 0.05s linear 0.1s;
+					}
+					&:after {
+						border-top: 2px solid #966e3b;
+						border-left-width: 2px;
+						border-right-width: 2px;
+						-webkit-transform: rotate(270deg);
+						-ms-transform: rotate(270deg);
+						transform: rotate(270deg);
+						-webkit-transition: -webkit-transform 0.2s linear 0s, border-left-width 0s linear 0.15s;
+						transition: -webkit-transform 0.2s linear 0s, border-left-width 0s linear 0.15s;
+					}
+				}
+				&:hover {
+					.marker-name {
+						color: #966e3b;
+						// text-shadow: none;
+						font-weight: normal;
+					}
+					.marker-icon-wrap {
+						&:before {
+							border-top-color: #966e3b;
+							border-right-color: #966e3b;
+							border-bottom-color: #966e3b;
+							-webkit-transition: border-top-color 0.05s linear, border-right-color 0.05s linear 0.05s, border-bottom-color 0.05s linear 0.1s;
+							transition: border-top-color 0.05s linear, border-right-color 0.05s linear 0.05s, border-bottom-color 0.05s linear 0.1s;
+						}
+						&:after {
+							border-top: 2px solid #966e3b;
+							border-left-width: 2px;
+							border-right-width: 2px;
+							-webkit-transform: rotate(270deg);
+							-ms-transform: rotate(270deg);
+							transform: rotate(270deg);
+							-webkit-transition: -webkit-transform 0.2s linear 0s, border-left-width 0s linear 0.15s;
+							transition: -webkit-transform 0.2s linear 0s, border-left-width 0s linear 0.15s;
+						}
+					}
+					.nav-btn-name {
+						font-size: 15px;
+					}
+				}
+			}
+			.center-focus {
+				display: block;
+				width: 20px;
+				height: 20px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				margin: auto;
+			}
+			.marker-img {
+				display: block;
+				img {
+					position: absolute;
+					top: -20px;
+					left: -15px;
+					border-radius: 50px;
+					display: block;
+					width: 40px;
+					height: 40px;
+					max-width:40px;
+					transform: transition(all, .3s ease-in-out);
+					transform: scale3d(0,0,0);
+				}
+			}
+			.marker-del {
+				display: none;
+				position: absolute;
+				background: rgba(230,230,230, 0.5);
+				width: 50px;
+				height: 50px;
+				line-height: 45px;
+				border-radius: 50deg;
+				transform: transition(all 1s ease-in-out);
+				transform: scale3d(0,0,0);
+				text-align: center;
+				vertical-align: middle;
+
+			}
+
+			.icon-del-ani {
+				display: block;
+				text-align: center;
+				/* top: -18px;
+				left: -16px; */
+				position: absolute;
+				margin: auto;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: -15px;
+				background: rgba(230,230,230, 0.8);
+				width: 50px;
+				height: 50px;
+				border-radius: 50px;
+				transform: transition(all 1s ease-in-out);
+				transform: scale3d(1,1,1);
+				line-height: 45px;
+			}
+		}
+		.assert-draggable.marker {
+			img {
+				width: 30px;
+				max-height: 30px;
+			}
+		}
+	}
+}

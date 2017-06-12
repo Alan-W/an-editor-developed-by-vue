@@ -1,0 +1,589 @@
+@charset "UTF-8";
+/* line 1, ../sass/assertboard.scss */
+.tree-list ul:before {
+  position: absolute;
+  border-left: 1px dotted #000;
+  content: "";
+  width: 20px;
+  top: 20px;
+  left: 5px;
+  bottom: 10px;
+}
+
+/* line 11, ../sass/assertboard.scss */
+.tree-list ul > li:before {
+  position: absolute;
+  border-top: 1px dotted #000;
+  content: "";
+  width: 15px;
+  top: 13px;
+  left: -15px;
+}
+
+/* line 20, ../sass/assertboard.scss */
+.tree-list li {
+  position: relative;
+}
+/* line 22, ../sass/assertboard.scss */
+.tree-list li a {
+  display: block;
+  position: relative;
+  padding: 2px 0;
+  color: #333;
+  text-decoration: none;
+  outline: 0 none;
+  cursor: pointer;
+  border-radius: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 10px 0;
+}
+/* line 35, ../sass/assertboard.scss */
+.tree-list li a:hover {
+  background: #f8f3f3;
+  text-overflow: inherit;
+  overflow: visible;
+  color: #0c7fa9;
+}
+/* line 41, ../sass/assertboard.scss */
+.tree-list li a .txt {
+  font-size: 12px;
+}
+/* line 43, ../sass/assertboard.scss */
+.tree-list li a .txt:hover {
+  text-overflow: inherit;
+  overflow: visible;
+  color: #0c7fa9;
+}
+/* line 56, ../sass/assertboard.scss */
+.tree-list .tree .first-layer .second-layer .second-layer-item.location .loc {
+  background: url("../../../../static/img/loc.png") no-repeat;
+}
+/* line 61, ../sass/assertboard.scss */
+.tree-list .tree .first-layer .second-layer .area .range {
+  background: url("../../../../static/img/area.png") no-repeat;
+}
+/* line 65, ../sass/assertboard.scss */
+.tree-list .tree .first-layer .second-layer .model {
+  background: url("../../../../static/img/mol.png") no-repeat;
+}
+/* line 68, ../sass/assertboard.scss */
+.tree-list .tree .first-layer .second-layer .identify {
+  background: url("../../../../static/img/mol.png") no-repeat;
+}
+
+/* line 76, ../sass/assertboard.scss */
+.edit-bottom {
+  z-index: 3000;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+}
+/* line 82, ../sass/assertboard.scss */
+.edit-bottom .tag-active {
+  background-color: #f8f3f3;
+  color: #337ab7;
+}
+/* line 88, ../sass/assertboard.scss */
+.edit-bottom .resourceBox .title .asserts-model-btn-wrapper {
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: #f5f5f5;
+  border: 1px solid #d0d0d0;
+  margin-top: 8px;
+  line-height: 30px;
+  text-align: center;
+}
+/* line 100, ../sass/assertboard.scss */
+.edit-bottom .resourceBox .title .asserts-model-btn-wrapper img {
+  margin-top: -3px;
+}
+/* line 105, ../sass/assertboard.scss */
+.edit-bottom .resourceBox .title .asserts-list-modal-off .list-off {
+  display: inline;
+}
+/* line 108, ../sass/assertboard.scss */
+.edit-bottom .resourceBox .title .asserts-list-modal-off .list-on {
+  display: none;
+}
+/* line 112, ../sass/assertboard.scss */
+.edit-bottom .resourceBox .title .asserts-list-modal-active {
+  background-color: #00B7EE;
+}
+/* line 114, ../sass/assertboard.scss */
+.edit-bottom .resourceBox .title .asserts-list-modal-active .list-on {
+  display: inline;
+}
+/* line 117, ../sass/assertboard.scss */
+.edit-bottom .resourceBox .title .asserts-list-modal-active .list-off {
+  display: none;
+}
+/* line 121, ../sass/assertboard.scss */
+.edit-bottom .resourceBox .title .asserts-scan-mode {
+  margin-right: 10px;
+}
+/* line 125, ../sass/assertboard.scss */
+.edit-bottom .resourceBox .title .asserts-scan-mode-off .scan-off {
+  display: inline;
+}
+/* line 128, ../sass/assertboard.scss */
+.edit-bottom .resourceBox .title .asserts-scan-mode-off .scan-on {
+  display: none;
+}
+/* line 132, ../sass/assertboard.scss */
+.edit-bottom .resourceBox .title .asserts-scan-mode-active {
+  background-color: #00B7EE;
+}
+/* line 134, ../sass/assertboard.scss */
+.edit-bottom .resourceBox .title .asserts-scan-mode-active .scan-on {
+  display: inline;
+}
+/* line 137, ../sass/assertboard.scss */
+.edit-bottom .resourceBox .title .asserts-scan-mode-active .scan-off {
+  display: none;
+}
+/* line 143, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper {
+  background-color: #eee;
+}
+/* line 146, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .folder-path {
+  height: 20px;
+  line-height: 20px;
+  background-color: #dddddd;
+}
+/* line 151, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .folder-path a:before {
+  display: none !important;
+}
+/* line 154, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .folder-path a:after {
+  display: inline-block !important;
+  content: "" !important;
+}
+/* line 160, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources {
+  height: 100%;
+}
+/* line 162, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources .detail-tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100% !important;
+  overflow: scroll;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+/* line 171, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources .layer {
+  width: 100%;
+  display: flex;
+}
+/* line 174, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources .layer li {
+  max-height: 50px;
+  max-width: 100px;
+  cursor: pointer;
+  margin: 10px;
+}
+/* line 179, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources .layer li a {
+  display: block;
+  max-height: 50px;
+  margin: 5px;
+  text-align: center;
+}
+/* line 185, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources .layer li a .fa.fa-folder-o:before {
+  font-size: 25px;
+}
+/* line 189, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources .layer li a .txt {
+  display: block;
+}
+/* line 194, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources .layer .detail-tags-wrapper {
+  display: none;
+}
+/* line 199, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources-icon-mode {
+  /* 普通的大图标模式 */
+}
+/* line 200, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources-icon-mode .detail-tag {
+  display: table-cell;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+/* line 205, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources-icon-mode .detail-tag a {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 7px;
+}
+/* line 213, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources-icon-mode .detail-tag a:hover {
+  background-color: #fff;
+}
+/* line 215, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources-icon-mode .detail-tag a:hover span.txt {
+  color: #337ab7;
+}
+/* line 219, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources-icon-mode .detail-tag a img {
+  width: 40px;
+  max-height: 40px;
+  min-height: 40px;
+}
+/* line 224, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources-icon-mode .detail-tag a span.txt {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #000;
+}
+/* line 230, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources-icon-mode .detail-tag a span.txt:hover {
+  text-overflow: inherit;
+  overflow: visible;
+}
+/* line 236, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources-icon-mode .detail-tag .assert-active {
+  background-color: #fff;
+}
+/* line 238, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources-icon-mode .detail-tag .assert-active span.txt {
+  color: #337ab7;
+}
+/* line 245, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources-list-mode {
+  /* 列表模式显示的资源 */
+  display: none;
+}
+/* line 247, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources-list-mode .detail-tag {
+  display: table-cell;
+  width: 50%;
+  height: 40px;
+  cursor: pointer;
+  border-right: 1px solid #eee;
+}
+/* line 253, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources-list-mode .detail-tag a {
+  width: 100%;
+  height: 30px;
+  margin: 5px;
+  display: block;
+  text-align: left;
+  vertical-align: middle;
+  padding-top: 7px;
+  box-sizing: border-box;
+}
+/* line 262, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources-list-mode .detail-tag a img {
+  width: 20px;
+  max-height: 20px;
+}
+/* line 266, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources-list-mode .detail-tag a span.txt {
+  margin-left: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 271, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources-list-mode .detail-tag a span.txt:hover {
+  text-overflow: inherit;
+  overflow: visible;
+}
+/* line 278, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources-list-mode .assert-draggable-active {
+  border: none;
+  background-color: #fff;
+}
+/* line 281, ../sass/assertboard.scss */
+.edit-bottom .asserts-left-wrapper .assert-resources-list-mode .assert-draggable-active .txt {
+  color: #00B7EE;
+}
+
+/* line 288, ../sass/assertboard.scss */
+.edit-bottom.horizational-view.origin-height {
+  min-height: 200px !important;
+}
+/* line 290, ../sass/assertboard.scss */
+.edit-bottom.horizational-view.origin-height .resourceBox {
+  min-height: 200px !important;
+}
+
+/* line 294, ../sass/assertboard.scss */
+.edit-bottom.horizational-view {
+  z-index: 3000;
+  position: fixed;
+}
+/* line 297, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox {
+  width: 100%;
+  min-width: 1000px;
+  height: 200px;
+  box-sizing: border-box;
+  padding-right: 280px;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  background-color: #ececec;
+}
+/* line 308, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox .search-wrapepr {
+  width: 100%;
+  height: 46px;
+  background-color: #ececec;
+  border: 1px solid #d0d0d0;
+  border-left: none;
+  border-right: none;
+  padding: 0 15px;
+}
+/* line 316, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox .search-wrapepr .title {
+  display: inline-block;
+  height: 46px;
+  font-size: 16px;
+  line-height: 46px;
+  width: 255px;
+}
+/* line 324, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach {
+  float: right;
+  position: relative;
+  height: 100%;
+}
+/* line 328, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .search-wrap {
+  display: inline-block;
+  margin-right: 10px;
+  height: 100%;
+  position: relative;
+}
+/* line 333, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .search-wrap .form-control {
+  width: 200px;
+  height: 24px;
+  border-radius: 24px;
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 5px 2px 25px;
+  margin: 10px 0;
+}
+/* line 342, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .search-wrap .search {
+  position: absolute;
+  top: 15px;
+  left: 8px;
+}
+/* line 347, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .search-wrap .search-btn {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 50px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 24px;
+  color: #fff;
+  background-color: #00B7EE;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+/* line 363, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .assert-btn-wrap {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  line-height: 40px;
+}
+/* line 368, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .assert-btn-wrap .form-control {
+  height: 25px;
+  line-height: 15px;
+  padding: 2px;
+  border-radius: 20px;
+  width: 150px;
+  display: none;
+  text-indent: 12px;
+}
+/* line 377, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .assert-btn-wrap #addAssertTag {
+  margin-right: 10px;
+}
+/* line 380, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .assert-btn-wrap .tag-name-oper-btn {
+  display: none;
+  position: absolute;
+  top: 8px;
+}
+/* line 385, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .assert-btn-wrap #submitAssertTag {
+  left: 120px;
+}
+/* line 388, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .assert-btn-wrap #cancelAssertTag {
+  left: 100px;
+}
+/* line 391, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .assert-btn-wrap .switch-btn-wrapper {
+  position: relative;
+  top: 7px;
+}
+/* line 398, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .show-assert-btn-wrap .tag-name-oper-btn {
+  display: inline;
+  margin: 5px;
+}
+/* line 402, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox .search-wrapepr .assert-serach .show-assert-btn-wrap .form-control {
+  display: inline-block;
+}
+/* line 408, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox .search-wrapepr .add-assert-tag {
+  float: right;
+  cursor: pointer;
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  background: url("../../../../static/img/add-folder.png") no-repeat 100%;
+}
+/* line 416, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox .search-wrapepr .add-folder-input-wrapper {
+  float: right;
+  position: relative;
+}
+/* line 419, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox .search-wrapepr .add-folder-input-wrapper .form-control {
+  transform: transition(all 0.3s ease);
+  width: 0px;
+  height: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* line 431, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox .search-wrapepr .add-folder-input-wrapper .form-control.show-input {
+  width: 120px;
+  margin: 5px 0;
+  padding: 2px 5px;
+  text-indent: 4px;
+}
+/* line 437, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox .search-wrapepr .add-folder-input-wrapper .save-cur-tag {
+  position: absolute;
+  right: 6px;
+  top: 9px;
+  width: 15px;
+  display: none;
+}
+/* line 446, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox #asserts {
+  padding-left: 5px;
+  width: 280px;
+  height: 100%;
+  float: left;
+  border-right: 1px solid #d0d0d0;
+  box-sizing: border-box;
+  overflow: scroll;
+  padding-bottom: 50px;
+}
+/* line 457, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox #asserts .detail-tags-wrapper {
+  display: none;
+}
+/* line 460, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox #asserts .asserts-active {
+  background-color: #cdcdcd;
+  color: #095b79;
+}
+/* line 466, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .resourceBox #asserts a.assert-folder:hover .deletebtn {
+  display: block;
+  z-index: 3000;
+}
+/* line 476, ../sass/assertboard.scss */
+.edit-bottom.horizational-view .asserts-left-wrapper {
+  margin-left: 300px;
+  height: 100%;
+}
+
+/* line 482, ../sass/assertboard.scss */
+.edit-bottom.vertical-view {
+  float: right;
+  position: relative;
+  z-index: 700;
+  height: 100%;
+  background-color: #eee;
+  width: 280px;
+  margin-top: 82px;
+}
+/* line 490, ../sass/assertboard.scss */
+.edit-bottom.vertical-view .resourceBox {
+  height: 100% !important;
+}
+/* line 493, ../sass/assertboard.scss */
+.edit-bottom.vertical-view .asserts-left-wrapper {
+  height: 50%;
+}
+/* line 496, ../sass/assertboard.scss */
+.edit-bottom.vertical-view .asserts-left-wrapper .assert-resources .detail-tags-wrapper {
+  overflow-y: scroll;
+}
+/* line 501, ../sass/assertboard.scss */
+.edit-bottom.vertical-view .search-wrapepr {
+  width: 100%;
+}
+/* line 503, ../sass/assertboard.scss */
+.edit-bottom.vertical-view .search-wrapepr .assert-serach {
+  display: none;
+}
+/* line 506, ../sass/assertboard.scss */
+.edit-bottom.vertical-view .search-wrapepr .title {
+  height: 46px;
+  font-size: 16px;
+  line-height: 46px;
+  border-bottom: 1px solid #d0d0d0;
+  padding: 0 10px;
+}
+/* line 516, ../sass/assertboard.scss */
+.edit-bottom.vertical-view #asserts {
+  border-bottom: 1px solid #d0d0d0;
+  padding-left: 20px;
+  height: 45%;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  padding-bottom: 20px;
+}
+/* line 525, ../sass/assertboard.scss */
+.edit-bottom.vertical-view #asserts .detail-tags-wrapper {
+  display: none;
+}
+/* line 528, ../sass/assertboard.scss */
+.edit-bottom.vertical-view #asserts .asserts-active {
+  background-color: #cdcdcd;
+  color: #095b79;
+}

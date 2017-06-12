@@ -1,0 +1,30 @@
+# 
+# Wavefront material file
+# Created with Kaydara FBX
+# 
+
+newmtl Material__0
+map_Kd xiasiquan_mu.jpg
+Ka 0.588000 0.588000 0.588000
+Kd 0.588000 0.588000 0.588000
+Ks 0.000000 0.000000 0.000000
+illum 2
+Ns 2.000000
+Tr 1.000000
+
+newmtl default1
+Ka 0.796079 0.796079 0.796079
+Kd 0.796079 0.796079 0.796079
+Ks 0.441000 0.441000 0.441000
+illum 2
+Ns 13.928809
+Tr 1.000000
+
+newmtl Material__12
+map_Kd xiasiquan_mu_tt.jpg
+Ka 0.588000 0.588000 0.588000
+Kd 0.588000 0.588000 0.588000
+Ks 0.000000 0.000000 0.000000
+illum 2
+Ns 2.000000
+Tr 1.000000
