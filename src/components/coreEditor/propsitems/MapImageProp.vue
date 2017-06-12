@@ -5,7 +5,7 @@
 			<span class="img-scan">
 				<img v-bind:src="propValue" >
 			</span>
-			<button class="btn btn-success change-img-btn map-choose-img" v-bind:disabled="canEdit">选择</button>
+			<button class="btn btn-success change-img-btn map-choose-img" v-bind:disabled="canEdit" data-target="#materialSource" data-toggle="modal">选择</button>
 			<button class="btn btn-danger clear-image" v-bind:disabled="canEdit">清除</button>
 		</div>
 	</li>

@@ -11,6 +11,7 @@ import IdentifyBindRoleAction from './actions/IdentifyBindRoleAction'
 import ClickRoleInstanceAction from './actions/ClickRoleInstanceAction'
 import SetMapNameAction from './actions/SetMapNameAction'
 import SetOrgDoublePropDataAction from './actions/SetOrgDoublePropDataAction'
+import SetMapDefaultConfigAction from './actions/SetMapDefaultConfigAction'
 
 //全景编辑模式下的文件引入
 import SetLabelpropTextAction from './actions/panoAction/SetLabelpropTextAction'
@@ -126,6 +127,13 @@ export const Set_Map_Map_south_west_Action = function (obj, newValue) {
 }
 export const Set_Map_Map_north_east_Action = function (obj, newValue) {
 	return new SetOrgDoublePropDataAction(obj, newValue, 'map_north_east');
+}
+// 设置关于地图的一些默认属性: 显示高德地图默认的地点, 是否显示手绘地图的图片
+export const Set_Map_Show_map_default_marker_Action = function (obj, newValue) {
+	return new SetMapDefaultConfigAction(obj, newValue, 'show_map_default_marker')
+}
+export const Set_Map_Show_map_custom_image_layer_Action = function (obj, newValue) {
+	return new SetMapDefaultConfigAction(obj, newValue, 'show_map_custom_image_layer')
 }
 
 //全景编辑器下的更改操作

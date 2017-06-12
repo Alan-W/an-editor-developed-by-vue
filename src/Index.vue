@@ -21,6 +21,7 @@
 		<PanoEditor v-if="activeMode=='panoEditor'"></PanoEditor>
 		<AssertBoard v-show="activeMode !== 'panoEditor' && activeMode !== '3DmapEditor' && activeViewBtn == '2' "></AssertBoard>
 		<ModelEditorComponent v-show="activeMode == 'modelEditor'"></ModelEditorComponent>
+		<MaterialBoard></MaterialBoard>
 		<ErrorTip v-if="errorData"></ErrorTip>
 	</section>
 </template>
@@ -40,6 +41,7 @@
 	import AssertBoard from './components/assertsBoard/AssertBoard'
 	import ModelEditorComponent from './components/modelEditor/ModelEditorComponent'
 	import ErrorTip from './components/coreEditor/ErrorTip'
+	import MaterialBoard from './components/coreEditor/material/MaterialBoard'
 
 	export default {
 		components: {
@@ -51,7 +53,8 @@
 			AMapComponent,
 			AssertBoard,
 			ModelEditorComponent,
-			ErrorTip
+			ErrorTip,
+			MaterialBoard
 		},
 
 		computed: {

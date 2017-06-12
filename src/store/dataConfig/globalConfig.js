@@ -221,6 +221,7 @@ export default {
 		], //  加载地图默认的贴图坐标数组
 		defMarkerIcon: getCurProVersion().version != -1 ? './new-editor/static/img/scene1.png' : './static/img/scene1.png',
 		lockImg: getCurProVersion().version != -1 ? './new-editor/static/img/lock.png' : './static/img/lock.png',
+		localStorageName: 'localMapInfo', // 地图属性信息在缓存中的名称
 	},
 	amapManager: amapManager,
 

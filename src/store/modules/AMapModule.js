@@ -4,17 +4,17 @@ import * as MutationTypes from '../mutation-types';
 
 // 获取缓存中关于地图显示属性的数据
 function getLocalStorageOperData () {
-	var localStorageMapInfo = localStorage.getItem('localMapInfo');
+	var localStorageMapInfo = localStorage.getItem(globalConfig.amapConfig.localStorageName);
 	console.log('当前缓存中的地图操作信息是: ------ ', localStorageMapInfo);
 	if (localStorageMapInfo) localStorageMapInfo =  JSON.parse(localStorageMapInfo);
 	else { // 没有缓存，默认是打开，设置缓存
 		var operData = {
-			showMapDefaultMarker: 1, // 1代表的是打开的状态(默认是显示高德地图上默认的地点的)
-			showMapCustomMapLayer: 1, // 1代表的是打开的状态(默认是显示高德地图的手绘地图的)
+			show_map_default_marker: 1, // 1代表的是打开的状态(默认是显示高德地图上默认的地点的)
+			show_map_custom_image_layer: 1, // 1代表的是打开的状态(默认是显示高德地图的手绘地图的)
 		};
 
 		localStorageMapInfo = operData;
-		localStorage.setItem('localMapInfo', JSON.stringify(operData));
+		localStorage.setItem(globalConfig.amapConfig.localStorageName, JSON.stringify(operData));
 	};
 	return localStorageMapInfo;
 }
@@ -51,8 +51,8 @@ const state = {
 			lng:globalConfig.amapConfig.defMapBounds[1][0],
 			lat: globalConfig.amapConfig.defMapBounds[1][1]
 		},
-		show_map_default_marker: getLocalStorageOperData().showMapDefaultMarker, // 从缓存中获取，当前是否是显示高德地图的默认地点标签
-		show_map_custom_image_layer: getLocalStorageOperData().showMapCustomMapLayer, // 从环缓存获取， 当前是否显示高德地图的手绘地图图层
+		show_map_default_marker: getLocalStorageOperData().show_map_default_marker, // 从缓存中获取，当前是否是显示高德地图的默认地点标签
+		show_map_custom_image_layer: getLocalStorageOperData().show_map_custom_image_layer, // 从环缓存获取， 当前是否显示高德地图的手绘地图图层
 		clickType: 'map',
 		
 	}, 

@@ -9,7 +9,7 @@ var SetMapNameAction = class SetMapNameAction extends Action {
 		super( 'SetMapNameAction', 'set value');
 		this.object = object; //  当前修改的对象
 		this.newName = newName;
-		this.oldType = this.object.name;
+		this.oldName = this.object.name;
 	}
 
 	// push the SetMapNameAction to the actions stacks;
@@ -20,8 +20,8 @@ var SetMapNameAction = class SetMapNameAction extends Action {
 
 	// undo the action
 	undo () {
-		this.object.name = this.oldType;
-		SubmitObjPropsApis.submitMapProps(this.object.id, 'name', this.oldType);
+		this.object.name = this.oldName;
+		SubmitObjPropsApis.submitMapProps(this.object.id, 'name', this.oldName);
 	}
 
 	redo () {

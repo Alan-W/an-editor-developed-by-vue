@@ -6,6 +6,7 @@
 		:zooms="zooms" 
 		:zIndex = "zIndex"
 		:events = "mapEvents()" 
+		:features = "mapObjData.featuresArray"
 		:expandZoomRange="expandZoomRange">
 		<!-- 自定义底图 -->
 		<el-amap-ground-image v-for="(groundimage, index) in mapObjData.groundimages" 
@@ -13,6 +14,7 @@
 			:url="groundimage.url" 
 			:zIndex="120" 
 			:bounds="groundimage.bounds"
+			:opacity= "mapObjData.showCustomImage"
 		></el-amap-ground-image>
 		<!-- 创建具备经纬度数据的marker -->
 		<el-amap-marker v-for="(marker, index) in locsList" 
@@ -116,7 +118,10 @@
 							bounds: this.curOrgInfo && [[this.curOrgInfo.map_south_west.lng,this.curOrgInfo.map_south_west.lat], [this.curOrgInfo.map_north_east.lng,this.curOrgInfo.map_north_east.lat]],
 							zooms: [3, 20]
 						}
-					]
+					],
+
+					featuresArray: (this.curOrgInfo && this.curOrgInfo.show_map_default_marker > 0) ? ['bg', 'road', 'building', 'point'] : ['bg', 'road', 'building'],
+					showCustomImage: ((this.curOrgInfo && this.curOrgInfo.show_map_custom_image_layer > 0) ? 1 : 0),
 				}
 			},
 
